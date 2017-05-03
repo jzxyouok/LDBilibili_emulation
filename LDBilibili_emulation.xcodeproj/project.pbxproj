@@ -19,6 +19,9 @@
 		AD4DE0021EB8CB160008C6F9 /* LDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE0011EB8CB160008C6F9 /* LDNavigationController.swift */; };
 		AD4DE0371EB8DD7D0008C6F9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4DE02A1EB8DD610008C6F9 /* Alamofire.framework */; };
 		AD4DE0381EB8DD7D0008C6F9 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD4DE02A1EB8DD610008C6F9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AD4DE03D1EBA0C060008C6F9 /* RecommendContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE03C1EBA0C060008C6F9 /* RecommendContentCell.swift */; };
+		AD4DE03F1EBA15830008C6F9 /* RecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE03E1EBA15830008C6F9 /* RecommendModel.swift */; };
+		AD4DE0411EBA16D70008C6F9 /* RecommendObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE0401EBA16D70008C6F9 /* RecommendObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -125,6 +128,9 @@
 		AD4DDFFF1EB8CAE10008C6F9 /* LDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDTabBarController.swift; sourceTree = "<group>"; };
 		AD4DE0011EB8CB160008C6F9 /* LDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDNavigationController.swift; sourceTree = "<group>"; };
 		AD4DE01E1EB8DD610008C6F9 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+		AD4DE03C1EBA0C060008C6F9 /* RecommendContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendContentCell.swift; sourceTree = "<group>"; };
+		AD4DE03E1EBA15830008C6F9 /* RecommendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendModel.swift; sourceTree = "<group>"; };
+		AD4DE0401EBA16D70008C6F9 /* RecommendObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -285,6 +291,8 @@
 		AD4DDFF91EB8C9F20008C6F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AD4DE03E1EBA15830008C6F9 /* RecommendModel.swift */,
+				AD4DE0401EBA16D70008C6F9 /* RecommendObject.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -292,6 +300,7 @@
 		AD4DDFFA1EB8C9F20008C6F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD4DE03C1EBA0C060008C6F9 /* RecommendContentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -512,10 +521,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD4DE0411EBA16D70008C6F9 /* RecommendObject.swift in Sources */,
 				AD4DDFFE1EB8CA8A0008C6F9 /* HomepageViewController.swift in Sources */,
 				AD4DE0001EB8CAE10008C6F9 /* LDTabBarController.swift in Sources */,
 				AD4DDFF71EB8C9600008C6F9 /* AppDelegate.swift in Sources */,
 				AD4DE0021EB8CB160008C6F9 /* LDNavigationController.swift in Sources */,
+				AD4DE03F1EBA15830008C6F9 /* RecommendModel.swift in Sources */,
+				AD4DE03D1EBA0C060008C6F9 /* RecommendContentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
