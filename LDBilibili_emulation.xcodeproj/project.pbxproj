@@ -7,18 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B385D12EB6F1F37BE7E708E /* Pods_LDBilibili_emulation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CFC049F90256F0C6AAB458 /* Pods_LDBilibili_emulation.framework */; };
 		AD4166FE1E7DB66F0033D506 /* LDBilibili_emulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */; };
 		AD4167091E7DB66F0033D506 /* LDBilibili_emulationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4167081E7DB66F0033D506 /* LDBilibili_emulationUITests.swift */; };
-		AD4DDFDA1EB8C3AD0008C6F9 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD4DDFD91EB8C3AD0008C6F9 /* Info.plist */; };
 		AD4DDFEC1EB8C7110008C6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4DDFE91EB8C7110008C6F9 /* Assets.xcassets */; };
 		AD4DDFED1EB8C7110008C6F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4DDFEA1EB8C7110008C6F9 /* LaunchScreen.storyboard */; };
-		AD4DDFEE1EB8C7110008C6F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4DDFEB1EB8C7110008C6F9 /* Main.storyboard */; };
 		AD4DDFF71EB8C9600008C6F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DDFF41EB8C9600008C6F9 /* AppDelegate.swift */; };
 		AD4DDFFE1EB8CA8A0008C6F9 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DDFFD1EB8CA8A0008C6F9 /* HomepageViewController.swift */; };
 		AD4DE0001EB8CAE10008C6F9 /* LDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DDFFF1EB8CAE10008C6F9 /* LDTabBarController.swift */; };
 		AD4DE0021EB8CB160008C6F9 /* LDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE0011EB8CB160008C6F9 /* LDNavigationController.swift */; };
-		AD4DE0371EB8DD7D0008C6F9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4DE02A1EB8DD610008C6F9 /* Alamofire.framework */; };
-		AD4DE0381EB8DD7D0008C6F9 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD4DE02A1EB8DD610008C6F9 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AD4DE03D1EBA0C060008C6F9 /* RecommendContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE03C1EBA0C060008C6F9 /* RecommendContentCell.swift */; };
 		AD4DE03F1EBA15830008C6F9 /* RecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE03E1EBA15830008C6F9 /* RecommendModel.swift */; };
 		AD4DE0411EBA16D70008C6F9 /* RecommendObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE0401EBA16D70008C6F9 /* RecommendObject.swift */; };
@@ -39,62 +36,6 @@
 			remoteGlobalIDString = AD4166E41E7DB66F0033D506;
 			remoteInfo = LDBilibili_emulation;
 		};
-		AD4DE0291EB8DD610008C6F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD4DE01E1EB8DD610008C6F9 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS";
-		};
-		AD4DE02B1EB8DD610008C6F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD4DE01E1EB8DD610008C6F9 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS Tests";
-		};
-		AD4DE02D1EB8DD610008C6F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD4DE01E1EB8DD610008C6F9 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
-			remoteInfo = "Alamofire macOS";
-		};
-		AD4DE02F1EB8DD610008C6F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD4DE01E1EB8DD610008C6F9 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
-			remoteInfo = "Alamofire macOS Tests";
-		};
-		AD4DE0311EB8DD610008C6F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD4DE01E1EB8DD610008C6F9 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS";
-		};
-		AD4DE0331EB8DD610008C6F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD4DE01E1EB8DD610008C6F9 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
-			remoteInfo = "Alamofire tvOS Tests";
-		};
-		AD4DE0351EB8DD610008C6F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD4DE01E1EB8DD610008C6F9 /* Alamofire.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E4202FE01B667AA100C997FB;
-			remoteInfo = "Alamofire watchOS";
-		};
-		AD4DE0391EB8DD7D0008C6F9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD4DE01E1EB8DD610008C6F9 /* Alamofire.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
-			remoteInfo = "Alamofire iOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -104,7 +45,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AD4DE0381EB8DD7D0008C6F9 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +52,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		62BE18B248AE88ECE8DD7B9E /* Pods-LDBilibili_emulation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDBilibili_emulation.release.xcconfig"; path = "Pods/Target Support Files/Pods-LDBilibili_emulation/Pods-LDBilibili_emulation.release.xcconfig"; sourceTree = "<group>"; };
+		7A4B74F31B1DEDFB6862D6F8 /* Pods-LDBilibili_emulation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDBilibili_emulation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LDBilibili_emulation/Pods-LDBilibili_emulation.debug.xcconfig"; sourceTree = "<group>"; };
+		88CFC049F90256F0C6AAB458 /* Pods_LDBilibili_emulation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LDBilibili_emulation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166E51E7DB66F0033D506 /* LDBilibili_emulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDBilibili_emulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166F91E7DB66F0033D506 /* LDBilibili_emulationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDBilibili_emulationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDBilibili_emulationTests.swift; sourceTree = "<group>"; };
@@ -122,12 +65,10 @@
 		AD4DDFD91EB8C3AD0008C6F9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD4DDFE91EB8C7110008C6F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD4DDFEA1EB8C7110008C6F9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AD4DDFEB1EB8C7110008C6F9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		AD4DDFF41EB8C9600008C6F9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD4DDFFD1EB8CA8A0008C6F9 /* HomepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		AD4DDFFF1EB8CAE10008C6F9 /* LDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDTabBarController.swift; sourceTree = "<group>"; };
 		AD4DE0011EB8CB160008C6F9 /* LDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDNavigationController.swift; sourceTree = "<group>"; };
-		AD4DE01E1EB8DD610008C6F9 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		AD4DE03C1EBA0C060008C6F9 /* RecommendContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendContentCell.swift; sourceTree = "<group>"; };
 		AD4DE03E1EBA15830008C6F9 /* RecommendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendModel.swift; sourceTree = "<group>"; };
 		AD4DE0401EBA16D70008C6F9 /* RecommendObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendObject.swift; sourceTree = "<group>"; };
@@ -138,7 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD4DE0371EB8DD7D0008C6F9 /* Alamofire.framework in Frameworks */,
+				7B385D12EB6F1F37BE7E708E /* Pods_LDBilibili_emulation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71A1D03A9A8164F60B423BA0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A4B74F31B1DEDFB6862D6F8 /* Pods-LDBilibili_emulation.debug.xcconfig */,
+				62BE18B248AE88ECE8DD7B9E /* Pods-LDBilibili_emulation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AD4166DC1E7DB66F0033D506 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +116,8 @@
 				AD4166FC1E7DB66F0033D506 /* LDBilibili_emulationTests */,
 				AD4167071E7DB66F0033D506 /* LDBilibili_emulationUITests */,
 				AD4166E61E7DB66F0033D506 /* Products */,
+				71A1D03A9A8164F60B423BA0 /* Pods */,
+				E0D003C8C1469F7D5E7B98C2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -224,7 +176,6 @@
 			children = (
 				AD4DDFE91EB8C7110008C6F9 /* Assets.xcassets */,
 				AD4DDFEA1EB8C7110008C6F9 /* LaunchScreen.storyboard */,
-				AD4DDFEB1EB8C7110008C6F9 /* Main.storyboard */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -239,7 +190,6 @@
 		AD4DDFF01EB8C94B0008C6F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD4DE01E1EB8DD610008C6F9 /* Alamofire.xcodeproj */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -312,18 +262,12 @@
 			path = LDKit;
 			sourceTree = "<group>";
 		};
-		AD4DE01F1EB8DD610008C6F9 /* Products */ = {
+		E0D003C8C1469F7D5E7B98C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AD4DE02A1EB8DD610008C6F9 /* Alamofire.framework */,
-				AD4DE02C1EB8DD610008C6F9 /* Alamofire iOS Tests.xctest */,
-				AD4DE02E1EB8DD610008C6F9 /* Alamofire.framework */,
-				AD4DE0301EB8DD610008C6F9 /* Alamofire macOS Tests.xctest */,
-				AD4DE0321EB8DD610008C6F9 /* Alamofire.framework */,
-				AD4DE0341EB8DD610008C6F9 /* Alamofire tvOS Tests.xctest */,
-				AD4DE0361EB8DD610008C6F9 /* Alamofire.framework */,
+				88CFC049F90256F0C6AAB458 /* Pods_LDBilibili_emulation.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,15 +277,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD41670D1E7DB66F0033D506 /* Build configuration list for PBXNativeTarget "LDBilibili_emulation" */;
 			buildPhases = (
+				332C5A0742EFB81781193FDC /* [CP] Check Pods Manifest.lock */,
 				AD4166E11E7DB66F0033D506 /* Sources */,
 				AD4166E21E7DB66F0033D506 /* Frameworks */,
 				AD4166E31E7DB66F0033D506 /* Resources */,
 				AD4DE03B1EB8DD7D0008C6F9 /* Embed Frameworks */,
+				43258BF3DCA6E74ED3F9D614 /* [CP] Embed Pods Frameworks */,
+				DA44AFC4E6CFDEA057621C88 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AD4DE03A1EB8DD7D0008C6F9 /* PBXTargetDependency */,
 			);
 			name = LDBilibili_emulation;
 			productName = LDBilibili_emulation;
@@ -421,12 +367,6 @@
 			mainGroup = AD4166DC1E7DB66F0033D506;
 			productRefGroup = AD4166E61E7DB66F0033D506 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = AD4DE01F1EB8DD610008C6F9 /* Products */;
-					ProjectRef = AD4DE01E1EB8DD610008C6F9 /* Alamofire.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				AD4166E41E7DB66F0033D506 /* LDBilibili_emulation */,
@@ -436,58 +376,6 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		AD4DE02A1EB8DD610008C6F9 /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = AD4DE0291EB8DD610008C6F9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AD4DE02C1EB8DD610008C6F9 /* Alamofire iOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire iOS Tests.xctest";
-			remoteRef = AD4DE02B1EB8DD610008C6F9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AD4DE02E1EB8DD610008C6F9 /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = AD4DE02D1EB8DD610008C6F9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AD4DE0301EB8DD610008C6F9 /* Alamofire macOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire macOS Tests.xctest";
-			remoteRef = AD4DE02F1EB8DD610008C6F9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AD4DE0321EB8DD610008C6F9 /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = AD4DE0311EB8DD610008C6F9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AD4DE0341EB8DD610008C6F9 /* Alamofire tvOS Tests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Alamofire tvOS Tests.xctest";
-			remoteRef = AD4DE0331EB8DD610008C6F9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AD4DE0361EB8DD610008C6F9 /* Alamofire.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Alamofire.framework;
-			remoteRef = AD4DE0351EB8DD610008C6F9 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		AD4166E31E7DB66F0033D506 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -495,8 +383,6 @@
 			files = (
 				AD4DDFED1EB8C7110008C6F9 /* LaunchScreen.storyboard in Resources */,
 				AD4DDFEC1EB8C7110008C6F9 /* Assets.xcassets in Resources */,
-				AD4DDFDA1EB8C3AD0008C6F9 /* Info.plist in Resources */,
-				AD4DDFEE1EB8C7110008C6F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +401,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		332C5A0742EFB81781193FDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		43258BF3DCA6E74ED3F9D614 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LDBilibili_emulation/Pods-LDBilibili_emulation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA44AFC4E6CFDEA057621C88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LDBilibili_emulation/Pods-LDBilibili_emulation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD4166E11E7DB66F0033D506 /* Sources */ = {
@@ -559,11 +493,6 @@
 			isa = PBXTargetDependency;
 			target = AD4166E41E7DB66F0033D506 /* LDBilibili_emulation */;
 			targetProxy = AD4167051E7DB66F0033D506 /* PBXContainerItemProxy */;
-		};
-		AD4DE03A1EB8DD7D0008C6F9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Alamofire iOS";
-			targetProxy = AD4DE0391EB8DD7D0008C6F9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -663,10 +592,12 @@
 		};
 		AD41670E1E7DB66F0033D506 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4B74F31B1DEDFB6862D6F8 /* Pods-LDBilibili_emulation.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LDBilibili_emulation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xlDon.LDBilibili-emulation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -676,10 +607,12 @@
 		};
 		AD41670F1E7DB66F0033D506 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62BE18B248AE88ECE8DD7B9E /* Pods-LDBilibili_emulation.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LDBilibili_emulation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xlDon.LDBilibili-emulation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -693,6 +626,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LDBilibili_emulationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xlDon.LDBilibili-emulationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -707,6 +641,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = LDBilibili_emulationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xlDon.LDBilibili-emulationTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -720,6 +655,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = LDBilibili_emulationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xlDon.LDBilibili-emulationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -733,6 +669,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = LDBilibili_emulationUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xlDon.LDBilibili-emulationUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
