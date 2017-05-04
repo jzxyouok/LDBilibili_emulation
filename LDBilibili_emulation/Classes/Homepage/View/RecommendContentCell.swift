@@ -10,7 +10,12 @@ import UIKit
 
 class RecommendContentCell: UITableViewCell {
 
-    var coverImageView: UIImageView?
+    lazy var coverImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.backgroundColor = UIColor.colorWithHexValue(hexValue: 0xd1d1d1, alpha: 1.0)
+        
+        return imageView
+    }()
     var titleLabel: UILabel?
     var pageViewLabel: UILabel?
     var pageViewIcon: UIImageView?

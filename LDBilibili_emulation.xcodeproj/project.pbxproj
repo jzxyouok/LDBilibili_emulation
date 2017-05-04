@@ -19,6 +19,7 @@
 		AD4DE03D1EBA0C060008C6F9 /* RecommendContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE03C1EBA0C060008C6F9 /* RecommendContentCell.swift */; };
 		AD4DE03F1EBA15830008C6F9 /* RecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE03E1EBA15830008C6F9 /* RecommendModel.swift */; };
 		AD4DE0411EBA16D70008C6F9 /* RecommendObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE0401EBA16D70008C6F9 /* RecommendObject.swift */; };
+		AD4DE0651EBB77100008C6F9 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE0641EBB77100008C6F9 /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		AD4DE03C1EBA0C060008C6F9 /* RecommendContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendContentCell.swift; sourceTree = "<group>"; };
 		AD4DE03E1EBA15830008C6F9 /* RecommendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendModel.swift; sourceTree = "<group>"; };
 		AD4DE0401EBA16D70008C6F9 /* RecommendObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendObject.swift; sourceTree = "<group>"; };
+		AD4DE0641EBB77100008C6F9 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,8 +260,17 @@
 		AD4DE0031EB8CBEF0008C6F9 /* LDKit */ = {
 			isa = PBXGroup;
 			children = (
+				AD4DE0611EBB75800008C6F9 /* Category */,
 			);
 			path = LDKit;
+			sourceTree = "<group>";
+		};
+		AD4DE0611EBB75800008C6F9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AD4DE0641EBB77100008C6F9 /* UIColor+Extensions.swift */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 		E0D003C8C1469F7D5E7B98C2 /* Frameworks */ = {
@@ -458,6 +469,7 @@
 				AD4DE0411EBA16D70008C6F9 /* RecommendObject.swift in Sources */,
 				AD4DDFFE1EB8CA8A0008C6F9 /* HomepageViewController.swift in Sources */,
 				AD4DE0001EB8CAE10008C6F9 /* LDTabBarController.swift in Sources */,
+				AD4DE0651EBB77100008C6F9 /* UIColor+Extensions.swift in Sources */,
 				AD4DDFF71EB8C9600008C6F9 /* AppDelegate.swift in Sources */,
 				AD4DE0021EB8CB160008C6F9 /* LDNavigationController.swift in Sources */,
 				AD4DE03F1EBA15830008C6F9 /* RecommendModel.swift in Sources */,
