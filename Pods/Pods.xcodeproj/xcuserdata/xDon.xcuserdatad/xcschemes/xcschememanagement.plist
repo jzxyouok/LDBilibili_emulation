@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Kingfisher.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-LDBilibili_emulation.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,7 +32,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>01DC61CB69E2A0A28C6411996C43E5E4</key>
+		<key>60ACCC35B6CC2C5E609EA4100D8EABBF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7E04E9761A1051FFF74E3843AA3F9D29</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -37,7 +47,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA0B566EF0030D614A2CD6AD754C73D4</key>
+		<key>C4944FEC314D1A66588651D006273ADE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

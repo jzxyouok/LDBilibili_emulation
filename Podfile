@@ -5,4 +5,5 @@ target "LDBilibili_emulation" do
 pod 'Alamofire’
 pod 'SnapKit'
 pod 'HandyJSON'
+pod 'Kingfisher'
 end
