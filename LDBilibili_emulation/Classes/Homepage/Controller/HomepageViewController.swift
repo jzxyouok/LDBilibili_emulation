@@ -24,6 +24,7 @@ class HomepageViewController: UIViewController, UITableViewDataSource {
             make.right.equalTo(0)
             make.bottom.equalTo(0)
         })
+        tableView.rowHeight = 115
         return tableView
     }()
     
@@ -35,18 +36,21 @@ class HomepageViewController: UIViewController, UITableViewDataSource {
         tableView.register(RecommendContentCell.classForCoder(), forCellReuseIdentifier: cellIdentifier)
 
         let model = RecommendModel()
-        model.getRecommendList()
+//        model.getRecommendList()
     }
     
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 8
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
-        cell.textLabel?.text = "测试！！"
+        let cell: RecommendContentCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! RecommendContentCell
+        
+        let recommend = RecommendObject()
+        recommend.title = "哈哈哈哈哈哈"
+        cell.recommend = recommend
         
         return cell
     }
