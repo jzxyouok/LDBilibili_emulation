@@ -56,6 +56,7 @@ class RecommendContentCell: UITableViewCell {
     lazy var pageViewLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor.colorWithHexValue(hexValue: 0x999999)
+        label.font = UIFont.systemFont(ofSize: 12)
         self.contentView.addSubview(label)
         label.snp.makeConstraints({ (make) in
             make.left.equalTo(self.pageViewIcon.snp.right)
@@ -65,10 +66,43 @@ class RecommendContentCell: UITableViewCell {
         return label
     }()
     
+    lazy var commentCountIcon: UIImageView = {
+        let imageView = UIImageView()
+        self.contentView.addSubview(imageView)
+        imageView.snp.makeConstraints({ (make) in
+            make.width.equalTo(self.pageViewIcon)
+            make.height.equalTo(self.pageViewIcon)
+            make.centerY.equalTo(self.pageViewIcon)
+            make.left.equalTo(self.pageViewLabel.snp.right).offset(10)
+            
+        })
+        return imageView
+    }()
     
-    var commentCountLabel: UILabel?
-    var commentCountIcon: UIImageView?
-    var tagLabel: UILabel?
+    
+    lazy var commentCountLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = UIColor.colorWithHexValue(hexValue: 0x999999)
+        label.font = UIFont.systemFont(ofSize: 12)
+        self.contentView.addSubview(label)
+        label.snp.makeConstraints({ (make) in
+            make.left.equalTo(self.commentCountIcon.snp.right)
+            make.centerY.equalTo(self.commentCountIcon)
+        })
+        return label
+    }()
+    
+    lazy var tagLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = UIColor.colorWithHexValue(hexValue: 0xd5d5d5)
+        label.font = UIFont.systemFont(ofSize: 12)
+        self.contentView.addSubview(label)
+        label.snp.makeConstraints({ (make) in
+            make.left.equalTo(self.pageViewIcon)
+            make.bottom.equalTo(self.coverImageView)
+        })
+        return label
+    }()
     
     var recommend: RecommendObject? {
         didSet{
@@ -76,6 +110,9 @@ class RecommendContentCell: UITableViewCell {
             self.vtitleLabel.text = recommend?.title
             self.pageViewIcon.image = UIImage(named:"playCount")
             self.pageViewLabel.text = "111111"
+            self.commentCountIcon.image = UIImage(named:"commentCount")
+            self.commentCountLabel.text = "2222"
+            self.tagLabel.text = "电影相关"
         }
     }
     
