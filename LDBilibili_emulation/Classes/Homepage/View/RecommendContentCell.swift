@@ -109,7 +109,7 @@ class RecommendContentCell: UITableViewCell {
             self.coverImageView.kf.setImage(with: URL(string: "https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=521967817,670473589&fm=80&w=179&h=119&img.JPEG"))
             self.vtitleLabel.text = recommend?.title
             self.pageViewIcon.image = UIImage(named:"playCount")
-            self.pageViewLabel.text = "111111"
+            self.pageViewLabel.text = "1111"
             self.commentCountIcon.image = UIImage(named:"commentCount")
             self.commentCountLabel.text = "2222"
             self.tagLabel.text = "电影相关"
