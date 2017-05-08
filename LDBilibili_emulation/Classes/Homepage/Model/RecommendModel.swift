@@ -33,7 +33,13 @@ class RecommendModel: NSObject {
         Alamofire.request("https://app.bilibili.com/x/feed/index", method: .get, parameters: parameters).responseString {
             response in
             guard let JSON = response.result.value else { return }
-            print(JSON)
+//            print(JSON)
+            
+            
+//            if let response1 = RecommendResponse.deserialize(from: JSON){
+//                
+//            }
+            
         }
 
     }

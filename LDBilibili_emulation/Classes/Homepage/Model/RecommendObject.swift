@@ -6,9 +6,9 @@
 //  Copyright © 2017年 xlDon. All rights reserved.
 //
 
-import UIKit
+import HandyJSON
 
-class RecommendObject: NSObject {
+class RecommendObject: HandyJSON {
     
     var title: String?
     var cover: String?
@@ -23,4 +23,6 @@ class RecommendObject: NSObject {
     var duration: Int?
     var name: String?
     var face: String?
+    
+    required init() {}
 }
