@@ -13,6 +13,7 @@ import SnapKit
 class HomepageViewController: UIViewController, UITableViewDataSource {
     
     let cellIdentifier = "RecommendContentCell"
+    var recommendList: Array<RecommendObject> = []
     
     lazy var tableView: UITableView = {
         
@@ -36,20 +37,22 @@ class HomepageViewController: UIViewController, UITableViewDataSource {
         tableView.register(RecommendContentCell.classForCoder(), forCellReuseIdentifier: cellIdentifier)
 
         let model = RecommendModel()
-        model.getRecommendList()
+        model.getRecommendList { (recommendList) in
+            self.recommendList = recommendList
+            self.tableView.reloadData()
+        }
     }
     
     // MARK: - UITableViewDataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return recommendList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: RecommendContentCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! RecommendContentCell
         
-        let recommend = RecommendObject()
-        recommend.title = "哈哈哈哈哈哈"
+        let recommend = recommendList[indexPath.row]
         cell.recommend = recommend
         
         return cell

@@ -30,12 +30,13 @@ class RecommendContentCell: UITableViewCell {
     lazy var vtitleLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor.colorWithHexValue(hexValue: 0x333333)
+        label.font = UIFont.systemFont(ofSize: 12)
         label.numberOfLines = 2
         self.contentView.addSubview(label)
         label.snp.makeConstraints({ (make) in
             make.top.equalTo(self.coverImageView)
             make.left.equalTo(self.coverImageView.snp.right).offset(15)
-            make.right.equalTo(self.contentView).offset(15)
+            make.right.equalTo(self.contentView).offset(-15)
         })
         
         return label
@@ -56,10 +57,10 @@ class RecommendContentCell: UITableViewCell {
     lazy var pageViewLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor.colorWithHexValue(hexValue: 0x999999)
-        label.font = UIFont.systemFont(ofSize: 12)
+        label.font = UIFont.systemFont(ofSize: 10)
         self.contentView.addSubview(label)
         label.snp.makeConstraints({ (make) in
-            make.left.equalTo(self.pageViewIcon.snp.right)
+            make.left.equalTo(self.pageViewIcon.snp.right).offset(5)
             make.centerY.equalTo(self.pageViewIcon)
         })
         
@@ -83,10 +84,10 @@ class RecommendContentCell: UITableViewCell {
     lazy var commentCountLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor.colorWithHexValue(hexValue: 0x999999)
-        label.font = UIFont.systemFont(ofSize: 12)
+        label.font = UIFont.systemFont(ofSize: 10)
         self.contentView.addSubview(label)
         label.snp.makeConstraints({ (make) in
-            make.left.equalTo(self.commentCountIcon.snp.right)
+            make.left.equalTo(self.commentCountIcon.snp.right).offset(5)
             make.centerY.equalTo(self.commentCountIcon)
         })
         return label
@@ -95,7 +96,7 @@ class RecommendContentCell: UITableViewCell {
     lazy var tagLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor.colorWithHexValue(hexValue: 0xd5d5d5)
-        label.font = UIFont.systemFont(ofSize: 12)
+        label.font = UIFont.systemFont(ofSize: 10)
         self.contentView.addSubview(label)
         label.snp.makeConstraints({ (make) in
             make.left.equalTo(self.pageViewIcon)
@@ -106,13 +107,38 @@ class RecommendContentCell: UITableViewCell {
     
     var recommend: RecommendObject? {
         didSet{
-            self.coverImageView.kf.setImage(with: URL(string: "https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=521967817,670473589&fm=80&w=179&h=119&img.JPEG"))
+            self.coverImageView.kf.setImage(with: URL(string: (recommend?.cover)!))
             self.vtitleLabel.text = recommend?.title
+            
+            //测试广告类型
+//            recommend?.goto = "ad_web"
+            
+            if recommend?.goto == "ad_web" {
+                showAdView()
+                return
+            }
+            
             self.pageViewIcon.image = UIImage(named:"playCount")
-            self.pageViewLabel.text = "1111"
+            self.pageViewLabel.text = String(format:"%d",(recommend?.play)!)
             self.commentCountIcon.image = UIImage(named:"commentCount")
-            self.commentCountLabel.text = "2222"
-            self.tagLabel.text = "电影相关"
+            self.commentCountLabel.text = String(format:"%d",(recommend?.danmaku)!)
+            self.tagLabel.text = recommend?.tname
+        }
+    }
+    
+    func showAdView() {
+        self.vtitleLabel.numberOfLines = 1
+        self.vtitleLabel.snp.remakeConstraints { (make) in
+            make.left.equalTo(15)
+            make.right.equalTo(-15)
+            make.bottom.equalTo(self.contentView).offset(-10)
+        }
+        
+        self.coverImageView.snp.remakeConstraints { (make) in
+            make.top.equalTo(15)
+            make.left.equalTo(15)
+            make.right.equalTo(-15)
+            make.bottom.equalTo(self.vtitleLabel.snp.top).offset(-5)
         }
     }
     
@@ -120,6 +146,7 @@ class RecommendContentCell: UITableViewCell {
         super.init(style:style, reuseIdentifier: reuseIdentifier)
         
         selectionStyle = UITableViewCellSelectionStyle.none
+        separatorInset = UIEdgeInsets.zero
     }
     
     required init?(coder aDecoder: NSCoder) {

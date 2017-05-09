@@ -12,9 +12,7 @@ import HandyJSON
 
 class RecommendModel: NSObject {
     
-//    var recommendList: Array<RecommendObject>?
-    
-    func getRecommendList() {
+    func getRecommendList(completion: @escaping (Array<RecommendObject>) -> ()) {
         
         let parameters:Dictionary = [
             "access_key":"b7ebe69214eb03c56a2a29a80f5f7b43",
@@ -35,15 +33,10 @@ class RecommendModel: NSObject {
         // 首页推荐接口
         Alamofire.request("https://app.bilibili.com/x/feed/index", method: .get, parameters: parameters).responseString {
             response in
-//            guard let JSON = response.result.value else { return }
-//            print(JSON)
-            
-            
-            if let res = JSONDeserializer<RecommendResponse>.deserializeFrom(json: response.result.value){
-                print(res.data)
-            }
-            
-        }
 
+            if let res = JSONDeserializer<RecommendResponse>.deserializeFrom(json: response.result.value){
+                completion(res.data!)
+            }
+        }
     }
 }
