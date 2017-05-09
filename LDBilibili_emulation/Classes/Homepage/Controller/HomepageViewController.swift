@@ -36,7 +36,7 @@ class HomepageViewController: UIViewController, UITableViewDataSource {
         tableView.register(RecommendContentCell.classForCoder(), forCellReuseIdentifier: cellIdentifier)
 
         let model = RecommendModel()
-//        model.getRecommendList()
+        model.getRecommendList()
     }
     
     // MARK: - UITableViewDataSource

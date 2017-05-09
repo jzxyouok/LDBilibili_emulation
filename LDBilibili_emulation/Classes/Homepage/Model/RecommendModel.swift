@@ -8,9 +8,12 @@
 
 import UIKit
 import Alamofire
+import HandyJSON
 
 class RecommendModel: NSObject {
-
+    
+//    var recommendList: Array<RecommendObject>?
+    
     func getRecommendList() {
         
         let parameters:Dictionary = [
@@ -32,13 +35,13 @@ class RecommendModel: NSObject {
         // 首页推荐接口
         Alamofire.request("https://app.bilibili.com/x/feed/index", method: .get, parameters: parameters).responseString {
             response in
-            guard let JSON = response.result.value else { return }
+//            guard let JSON = response.result.value else { return }
 //            print(JSON)
             
             
-//            if let response1 = RecommendResponse.deserialize(from: JSON){
-//                
-//            }
+            if let res = JSONDeserializer<RecommendResponse>.deserializeFrom(json: response.result.value){
+                print(res.data)
+            }
             
         }
 
