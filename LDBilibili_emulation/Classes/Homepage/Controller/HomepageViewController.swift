@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 
 
-class HomepageViewController: UIViewController, UITableViewDataSource {
+class HomepageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let cellIdentifier = "RecommendContentCell"
     var recommendList: Array<RecommendObject> = []
@@ -32,7 +32,7 @@ class HomepageViewController: UIViewController, UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self as? UITableViewDelegate
+        tableView.delegate = self
         tableView.dataSource = self
         tableView.register(RecommendContentCell.classForCoder(), forCellReuseIdentifier: cellIdentifier)
 
@@ -58,4 +58,11 @@ class HomepageViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
+    // MARK: - UITableViewDelegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        var recommend = recommendList[indexPath.row]
+        let vc = VideoDetailViewController()
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
