@@ -22,6 +22,7 @@
 		AD4DE0411EBA16D70008C6F9 /* RecommendObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE0401EBA16D70008C6F9 /* RecommendObject.swift */; };
 		AD4DE0651EBB77100008C6F9 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE0641EBB77100008C6F9 /* UIColor+Extensions.swift */; };
 		AD5BDFD81EC3537200F01FC1 /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFD71EC3537200F01FC1 /* VideoDetailViewController.swift */; };
+		AD5BDFDA1EC4AEE200F01FC1 /* VideoDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFD91EC4AEE200F01FC1 /* VideoDetailModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		AD4DE0401EBA16D70008C6F9 /* RecommendObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendObject.swift; sourceTree = "<group>"; };
 		AD4DE0641EBB77100008C6F9 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		AD5BDFD71EC3537200F01FC1 /* VideoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
+		AD5BDFD91EC4AEE200F01FC1 /* VideoDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +302,7 @@
 		AD5BDFD31EC3533400F01FC1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AD5BDFD91EC4AEE200F01FC1 /* VideoDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -511,6 +514,7 @@
 				AD4DE0001EB8CAE10008C6F9 /* LDTabBarController.swift in Sources */,
 				AD4DE0651EBB77100008C6F9 /* UIColor+Extensions.swift in Sources */,
 				AD4DDFF71EB8C9600008C6F9 /* AppDelegate.swift in Sources */,
+				AD5BDFDA1EC4AEE200F01FC1 /* VideoDetailModel.swift in Sources */,
 				AD4DE0021EB8CB160008C6F9 /* LDNavigationController.swift in Sources */,
 				AD4DE03F1EBA15830008C6F9 /* RecommendModel.swift in Sources */,
 				AD4DE03D1EBA0C060008C6F9 /* RecommendContentCell.swift in Sources */,

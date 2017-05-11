@@ -109,20 +109,30 @@ class RecommendContentCell: UITableViewCell {
         didSet{
             self.coverImageView.kf.setImage(with: URL(string: (recommend?.cover)!))
             self.vtitleLabel.text = recommend?.title
-            
-            //测试广告类型
-//            recommend?.goto = "ad_web"
-            
-            if recommend?.goto == "ad_web" {
-                showAdView()
-                return
-            }
-            
             self.pageViewIcon.image = UIImage(named:"playCount")
             self.pageViewLabel.text = String(format:"%d",(recommend?.play)!)
             self.commentCountIcon.image = UIImage(named:"commentCount")
             self.commentCountLabel.text = String(format:"%d",(recommend?.danmaku)!)
             self.tagLabel.text = recommend?.tname
+            
+            //测试广告类型
+            //            recommend?.goto = "ad_web"
+            if recommend?.goto == "ad_web" {
+                showAdView()
+                self.pageViewIcon.isHidden = true
+                self.pageViewLabel.isHidden = true
+                self.commentCountIcon.isHidden = true
+                self.commentCountLabel.isHidden = true
+                self.tagLabel.isHidden = true
+            }
+            else
+            {
+                self.pageViewIcon.isHidden = false
+                self.pageViewLabel.isHidden = false
+                self.commentCountIcon.isHidden = false
+                self.commentCountLabel.isHidden = false
+                self.tagLabel.isHidden = false
+            }
         }
     }
     
