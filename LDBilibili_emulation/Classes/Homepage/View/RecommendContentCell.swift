@@ -110,46 +110,55 @@ class RecommendContentCell: UITableViewCell {
             self.coverImageView.kf.setImage(with: URL(string: (recommend?.cover)!))
             self.vtitleLabel.text = recommend?.title
             self.pageViewIcon.image = UIImage(named:"playCount")
-            self.pageViewLabel.text = String(format:"%d",(recommend?.play)!)
+            let play = recommend?.play ?? 0;
+            self.pageViewLabel.text = String(format:"%d",(play))
             self.commentCountIcon.image = UIImage(named:"commentCount")
-            self.commentCountLabel.text = String(format:"%d",(recommend?.danmaku)!)
+            let danmu = recommend?.danmaku ?? 0;
+            self.commentCountLabel.text = String(format:"%d",(danmu))
             self.tagLabel.text = recommend?.tname
             
-            //测试广告类型
-            //            recommend?.goto = "ad_web"
-            if recommend?.goto == "ad_web" {
-                showAdView()
-                self.pageViewIcon.isHidden = true
-                self.pageViewLabel.isHidden = true
-                self.commentCountIcon.isHidden = true
-                self.commentCountLabel.isHidden = true
-                self.tagLabel.isHidden = true
-            }
-            else
-            {
-                self.pageViewIcon.isHidden = false
-                self.pageViewLabel.isHidden = false
-                self.commentCountIcon.isHidden = false
-                self.commentCountLabel.isHidden = false
-                self.tagLabel.isHidden = false
-            }
+            showAdView(isShow: recommend?.goto == "ad_web")
         }
     }
     
-    func showAdView() {
-        self.vtitleLabel.numberOfLines = 1
-        self.vtitleLabel.snp.remakeConstraints { (make) in
-            make.left.equalTo(15)
-            make.right.equalTo(-15)
-            make.bottom.equalTo(self.contentView).offset(-10)
+    func showAdView(isShow: Bool) {
+        if isShow {
+            self.vtitleLabel.numberOfLines = 1
+            self.vtitleLabel.snp.remakeConstraints { (make) in
+                make.left.equalTo(15)
+                make.right.equalTo(-15)
+                make.bottom.equalTo(self.contentView).offset(-10)
+            }
+            
+            self.coverImageView.snp.remakeConstraints { (make) in
+                make.top.equalTo(15)
+                make.left.equalTo(15)
+                make.right.equalTo(-15)
+                make.bottom.equalTo(self.vtitleLabel.snp.top).offset(-5)
+            }
         }
+        else
+        {
+            self.vtitleLabel.numberOfLines = 2
+            self.coverImageView.snp.remakeConstraints({ (make) in
+                make.left.equalTo(15)
+                make.height.equalTo(90)
+                make.width.equalTo(150)
+                make.centerY.equalTo(self.contentView)
+            })
+            
+            self.vtitleLabel.snp.remakeConstraints({ (make) in
+                make.top.equalTo(self.coverImageView)
+                make.left.equalTo(self.coverImageView.snp.right).offset(15)
+                make.right.equalTo(self.contentView).offset(-15)
+            })
+        }
+        self.pageViewIcon.isHidden = isShow
+        self.pageViewLabel.isHidden = isShow
+        self.commentCountIcon.isHidden = isShow
+        self.commentCountLabel.isHidden = isShow
+        self.tagLabel.isHidden = isShow
         
-        self.coverImageView.snp.remakeConstraints { (make) in
-            make.top.equalTo(15)
-            make.left.equalTo(15)
-            make.right.equalTo(-15)
-            make.bottom.equalTo(self.vtitleLabel.snp.top).offset(-5)
-        }
     }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
