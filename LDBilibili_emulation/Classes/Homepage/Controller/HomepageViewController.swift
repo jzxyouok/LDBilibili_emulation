@@ -60,8 +60,9 @@ class HomepageViewController: UIViewController, UITableViewDataSource, UITableVi
     
     // MARK: - UITableViewDelegate
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        var recommend = recommendList[indexPath.row]
+        let recommend = recommendList[indexPath.row]
         let vc = VideoDetailViewController()
+        vc.recommend = recommend
         vc.hidesBottomBarWhenPushed = true
         navigationController?.pushViewController(vc, animated: true)
     }

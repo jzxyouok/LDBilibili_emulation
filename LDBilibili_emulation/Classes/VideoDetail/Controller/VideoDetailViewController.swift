@@ -10,6 +10,7 @@ import UIKit
 
 class VideoDetailViewController: UIViewController {
 
+    var recommend: RecommendObject?
     override func viewDidLoad() {
         super.viewDidLoad()
 

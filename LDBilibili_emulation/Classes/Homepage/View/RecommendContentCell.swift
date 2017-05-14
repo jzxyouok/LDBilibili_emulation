@@ -116,7 +116,6 @@ class RecommendContentCell: UITableViewCell {
             let danmu = recommend?.danmaku ?? 0;
             self.commentCountLabel.text = String(format:"%d",(danmu))
             self.tagLabel.text = recommend?.tname
-            
             showAdView(isShow: recommend?.goto == "ad_web")
         }
     }
