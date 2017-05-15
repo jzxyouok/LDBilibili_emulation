@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7B385D12EB6F1F37BE7E708E /* Pods_LDBilibili_emulation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CFC049F90256F0C6AAB458 /* Pods_LDBilibili_emulation.framework */; };
-		AD2BD0CA1EC0AFE500B38623 /* RecommendResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2BD0C91EC0AFE500B38623 /* RecommendResponse.swift */; };
 		AD4166FE1E7DB66F0033D506 /* LDBilibili_emulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */; };
 		AD4167091E7DB66F0033D506 /* LDBilibili_emulationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4167081E7DB66F0033D506 /* LDBilibili_emulationUITests.swift */; };
 		AD4DDFEC1EB8C7110008C6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4DDFE91EB8C7110008C6F9 /* Assets.xcassets */; };
@@ -17,12 +16,18 @@
 		AD4DDFFE1EB8CA8A0008C6F9 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DDFFD1EB8CA8A0008C6F9 /* HomepageViewController.swift */; };
 		AD4DE0001EB8CAE10008C6F9 /* LDTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DDFFF1EB8CAE10008C6F9 /* LDTabBarController.swift */; };
 		AD4DE0021EB8CB160008C6F9 /* LDNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE0011EB8CB160008C6F9 /* LDNavigationController.swift */; };
-		AD4DE03D1EBA0C060008C6F9 /* RecommendContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE03C1EBA0C060008C6F9 /* RecommendContentCell.swift */; };
-		AD4DE03F1EBA15830008C6F9 /* RecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE03E1EBA15830008C6F9 /* RecommendModel.swift */; };
-		AD4DE0411EBA16D70008C6F9 /* RecommendObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE0401EBA16D70008C6F9 /* RecommendObject.swift */; };
 		AD4DE0651EBB77100008C6F9 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4DE0641EBB77100008C6F9 /* UIColor+Extensions.swift */; };
 		AD5BDFD81EC3537200F01FC1 /* VideoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFD71EC3537200F01FC1 /* VideoDetailViewController.swift */; };
 		AD5BDFDA1EC4AEE200F01FC1 /* VideoDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFD91EC4AEE200F01FC1 /* VideoDetailModel.swift */; };
+		AD5BDFE21EC9E06800F01FC1 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFE11EC9E06800F01FC1 /* RecommendViewController.swift */; };
+		AD5BDFE41EC9E2E900F01FC1 /* RecommendContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFE31EC9E2E900F01FC1 /* RecommendContentCell.swift */; };
+		AD5BDFE81EC9E2F400F01FC1 /* RecommendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFE51EC9E2F400F01FC1 /* RecommendModel.swift */; };
+		AD5BDFE91EC9E2F400F01FC1 /* RecommendObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFE61EC9E2F400F01FC1 /* RecommendObject.swift */; };
+		AD5BDFEA1EC9E2F400F01FC1 /* RecommendResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFE71EC9E2F400F01FC1 /* RecommendResponse.swift */; };
+		AD5BDFED1EC9E49600F01FC1 /* LDSubfieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFEC1EC9E49600F01FC1 /* LDSubfieldViewController.swift */; };
+		AD5BDFEF1EC9E85C00F01FC1 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFEE1EC9E85C00F01FC1 /* UIView+Extensions.swift */; };
+		AD5BDFF91EC9F39E00F01FC1 /* BangumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFF81EC9F39E00F01FC1 /* BangumiViewController.swift */; };
+		AD5BDFFB1EC9F3B800F01FC1 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFFA1EC9F3B800F01FC1 /* LiveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +64,6 @@
 		62BE18B248AE88ECE8DD7B9E /* Pods-LDBilibili_emulation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDBilibili_emulation.release.xcconfig"; path = "Pods/Target Support Files/Pods-LDBilibili_emulation/Pods-LDBilibili_emulation.release.xcconfig"; sourceTree = "<group>"; };
 		7A4B74F31B1DEDFB6862D6F8 /* Pods-LDBilibili_emulation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDBilibili_emulation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LDBilibili_emulation/Pods-LDBilibili_emulation.debug.xcconfig"; sourceTree = "<group>"; };
 		88CFC049F90256F0C6AAB458 /* Pods_LDBilibili_emulation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LDBilibili_emulation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD2BD0C91EC0AFE500B38623 /* RecommendResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendResponse.swift; sourceTree = "<group>"; };
 		AD4166E51E7DB66F0033D506 /* LDBilibili_emulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDBilibili_emulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166F91E7DB66F0033D506 /* LDBilibili_emulationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDBilibili_emulationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDBilibili_emulationTests.swift; sourceTree = "<group>"; };
@@ -74,12 +78,18 @@
 		AD4DDFFD1EB8CA8A0008C6F9 /* HomepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		AD4DDFFF1EB8CAE10008C6F9 /* LDTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDTabBarController.swift; sourceTree = "<group>"; };
 		AD4DE0011EB8CB160008C6F9 /* LDNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDNavigationController.swift; sourceTree = "<group>"; };
-		AD4DE03C1EBA0C060008C6F9 /* RecommendContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendContentCell.swift; sourceTree = "<group>"; };
-		AD4DE03E1EBA15830008C6F9 /* RecommendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendModel.swift; sourceTree = "<group>"; };
-		AD4DE0401EBA16D70008C6F9 /* RecommendObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendObject.swift; sourceTree = "<group>"; };
 		AD4DE0641EBB77100008C6F9 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		AD5BDFD71EC3537200F01FC1 /* VideoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailViewController.swift; sourceTree = "<group>"; };
 		AD5BDFD91EC4AEE200F01FC1 /* VideoDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoDetailModel.swift; sourceTree = "<group>"; };
+		AD5BDFE11EC9E06800F01FC1 /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		AD5BDFE31EC9E2E900F01FC1 /* RecommendContentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendContentCell.swift; sourceTree = "<group>"; };
+		AD5BDFE51EC9E2F400F01FC1 /* RecommendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendModel.swift; sourceTree = "<group>"; };
+		AD5BDFE61EC9E2F400F01FC1 /* RecommendObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendObject.swift; sourceTree = "<group>"; };
+		AD5BDFE71EC9E2F400F01FC1 /* RecommendResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendResponse.swift; sourceTree = "<group>"; };
+		AD5BDFEC1EC9E49600F01FC1 /* LDSubfieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDSubfieldViewController.swift; sourceTree = "<group>"; };
+		AD5BDFEE1EC9E85C00F01FC1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		AD5BDFF81EC9F39E00F01FC1 /* BangumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewController.swift; sourceTree = "<group>"; };
+		AD5BDFFA1EC9F3B800F01FC1 /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +225,9 @@
 				AD4DDFF41EB8C9600008C6F9 /* AppDelegate.swift */,
 				AD4DDFF61EB8C9600008C6F9 /* MainFrame */,
 				AD4DDFF51EB8C9600008C6F9 /* Homepage */,
+				AD5BDFDB1EC9DF9C00F01FC1 /* Recommend */,
+				AD5BDFF01EC9F35500F01FC1 /* Bangumi */,
+				AD5BDFF41EC9F36900F01FC1 /* Live */,
 				AD5BDFD11EC3533400F01FC1 /* VideoDetail */,
 			);
 			path = Classes;
@@ -250,9 +263,6 @@
 		AD4DDFF91EB8C9F20008C6F9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AD4DE03E1EBA15830008C6F9 /* RecommendModel.swift */,
-				AD4DE0401EBA16D70008C6F9 /* RecommendObject.swift */,
-				AD2BD0C91EC0AFE500B38623 /* RecommendResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -260,7 +270,6 @@
 		AD4DDFFA1EB8C9F20008C6F9 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AD4DE03C1EBA0C060008C6F9 /* RecommendContentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +277,7 @@
 		AD4DE0031EB8CBEF0008C6F9 /* LDKit */ = {
 			isa = PBXGroup;
 			children = (
+				AD5BDFEB1EC9E47F00F01FC1 /* LDSubfieldViewController */,
 				AD4DE0611EBB75800008C6F9 /* Category */,
 			);
 			path = LDKit;
@@ -277,6 +287,7 @@
 			isa = PBXGroup;
 			children = (
 				AD4DE0641EBB77100008C6F9 /* UIColor+Extensions.swift */,
+				AD5BDFEE1EC9E85C00F01FC1 /* UIView+Extensions.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -308,6 +319,115 @@
 			sourceTree = "<group>";
 		};
 		AD5BDFD41EC3533400F01FC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD5BDFDB1EC9DF9C00F01FC1 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BDFDC1EC9DF9C00F01FC1 /* Controller */,
+				AD5BDFDD1EC9DF9C00F01FC1 /* Model */,
+				AD5BDFDE1EC9DF9C00F01FC1 /* View */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		AD5BDFDC1EC9DF9C00F01FC1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BDFE11EC9E06800F01FC1 /* RecommendViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD5BDFDD1EC9DF9C00F01FC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BDFE51EC9E2F400F01FC1 /* RecommendModel.swift */,
+				AD5BDFE61EC9E2F400F01FC1 /* RecommendObject.swift */,
+				AD5BDFE71EC9E2F400F01FC1 /* RecommendResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD5BDFDE1EC9DF9C00F01FC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BDFE31EC9E2E900F01FC1 /* RecommendContentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD5BDFEB1EC9E47F00F01FC1 /* LDSubfieldViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BDFEC1EC9E49600F01FC1 /* LDSubfieldViewController.swift */,
+			);
+			path = LDSubfieldViewController;
+			sourceTree = "<group>";
+		};
+		AD5BDFF01EC9F35500F01FC1 /* Bangumi */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BDFF11EC9F35500F01FC1 /* Controller */,
+				AD5BDFF21EC9F35500F01FC1 /* Model */,
+				AD5BDFF31EC9F35500F01FC1 /* View */,
+			);
+			name = Bangumi;
+			path = VideoDetail/Bangumi;
+			sourceTree = "<group>";
+		};
+		AD5BDFF11EC9F35500F01FC1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BDFF81EC9F39E00F01FC1 /* BangumiViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD5BDFF21EC9F35500F01FC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD5BDFF31EC9F35500F01FC1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AD5BDFF41EC9F36900F01FC1 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BDFF51EC9F36900F01FC1 /* Controller */,
+				AD5BDFF61EC9F36900F01FC1 /* Model */,
+				AD5BDFF71EC9F36900F01FC1 /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		AD5BDFF51EC9F36900F01FC1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AD5BDFFA1EC9F3B800F01FC1 /* LiveViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AD5BDFF61EC9F36900F01FC1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD5BDFF71EC9F36900F01FC1 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -507,17 +627,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD4DE0411EBA16D70008C6F9 /* RecommendObject.swift in Sources */,
-				AD2BD0CA1EC0AFE500B38623 /* RecommendResponse.swift in Sources */,
+				AD5BDFEF1EC9E85C00F01FC1 /* UIView+Extensions.swift in Sources */,
+				AD5BDFE81EC9E2F400F01FC1 /* RecommendModel.swift in Sources */,
+				AD5BDFFB1EC9F3B800F01FC1 /* LiveViewController.swift in Sources */,
 				AD4DDFFE1EB8CA8A0008C6F9 /* HomepageViewController.swift in Sources */,
 				AD5BDFD81EC3537200F01FC1 /* VideoDetailViewController.swift in Sources */,
 				AD4DE0001EB8CAE10008C6F9 /* LDTabBarController.swift in Sources */,
+				AD5BDFE41EC9E2E900F01FC1 /* RecommendContentCell.swift in Sources */,
+				AD5BDFED1EC9E49600F01FC1 /* LDSubfieldViewController.swift in Sources */,
+				AD5BDFE21EC9E06800F01FC1 /* RecommendViewController.swift in Sources */,
 				AD4DE0651EBB77100008C6F9 /* UIColor+Extensions.swift in Sources */,
+				AD5BDFF91EC9F39E00F01FC1 /* BangumiViewController.swift in Sources */,
+				AD5BDFEA1EC9E2F400F01FC1 /* RecommendResponse.swift in Sources */,
 				AD4DDFF71EB8C9600008C6F9 /* AppDelegate.swift in Sources */,
 				AD5BDFDA1EC4AEE200F01FC1 /* VideoDetailModel.swift in Sources */,
+				AD5BDFE91EC9E2F400F01FC1 /* RecommendObject.swift in Sources */,
 				AD4DE0021EB8CB160008C6F9 /* LDNavigationController.swift in Sources */,
-				AD4DE03F1EBA15830008C6F9 /* RecommendModel.swift in Sources */,
-				AD4DE03D1EBA0C060008C6F9 /* RecommendContentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
