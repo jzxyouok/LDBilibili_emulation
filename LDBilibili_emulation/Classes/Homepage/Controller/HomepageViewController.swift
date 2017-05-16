@@ -14,6 +14,25 @@ class HomepageViewController: UIViewController {
         super.viewDidLoad()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.default, animated: true)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIApplication.shared.setStatusBarStyle(UIStatusBarStyle.default, animated: true)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        self.navigationController?.navigationBar.alpha = 0
+        self.navigationController?.navigationBar.superview?.sendSubview(toBack: (self.navigationController?.navigationBar)!)
+    }
+    
+    
     func setupChildViewControllers() {
         let lVC = LiveViewController()
         lVC.title = "直播"

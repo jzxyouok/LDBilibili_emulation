@@ -11,7 +11,7 @@ import UIKit
 class LDSubfieldViewController: UIViewController {
 
     // 索引控制器
-    var selectIndex: NSInteger = 0 {
+    var selectIndex: NSInteger? {
         didSet {
             
         
