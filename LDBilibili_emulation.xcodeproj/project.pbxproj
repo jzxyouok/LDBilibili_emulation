@@ -28,6 +28,7 @@
 		AD5BDFEF1EC9E85C00F01FC1 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFEE1EC9E85C00F01FC1 /* UIView+Extensions.swift */; };
 		AD5BDFF91EC9F39E00F01FC1 /* BangumiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFF81EC9F39E00F01FC1 /* BangumiViewController.swift */; };
 		AD5BDFFB1EC9F3B800F01FC1 /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFFA1EC9F3B800F01FC1 /* LiveViewController.swift */; };
+		AD5BDFFD1ECC9EE200F01FC1 /* LDSubfieldFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFFC1ECC9EE200F01FC1 /* LDSubfieldFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		AD5BDFEE1EC9E85C00F01FC1 /* UIView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		AD5BDFF81EC9F39E00F01FC1 /* BangumiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BangumiViewController.swift; sourceTree = "<group>"; };
 		AD5BDFFA1EC9F3B800F01FC1 /* LiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		AD5BDFFC1ECC9EE200F01FC1 /* LDSubfieldFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDSubfieldFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -365,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				AD5BDFEC1EC9E49600F01FC1 /* LDSubfieldViewController.swift */,
+				AD5BDFFC1ECC9EE200F01FC1 /* LDSubfieldFlowLayout.swift */,
 			);
 			path = LDSubfieldViewController;
 			sourceTree = "<group>";
@@ -636,6 +639,7 @@
 				AD5BDFE41EC9E2E900F01FC1 /* RecommendContentCell.swift in Sources */,
 				AD5BDFED1EC9E49600F01FC1 /* LDSubfieldViewController.swift in Sources */,
 				AD5BDFE21EC9E06800F01FC1 /* RecommendViewController.swift in Sources */,
+				AD5BDFFD1ECC9EE200F01FC1 /* LDSubfieldFlowLayout.swift in Sources */,
 				AD4DE0651EBB77100008C6F9 /* UIColor+Extensions.swift in Sources */,
 				AD5BDFF91EC9F39E00F01FC1 /* BangumiViewController.swift in Sources */,
 				AD5BDFEA1EC9E2F400F01FC1 /* RecommendResponse.swift in Sources */,
