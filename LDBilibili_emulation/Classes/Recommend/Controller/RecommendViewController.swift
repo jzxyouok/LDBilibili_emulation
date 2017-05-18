@@ -17,6 +17,7 @@ class RecommendViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.register(RecommendContentCell.classForCoder(), forCellReuseIdentifier: cellIdentifier)
+        tableView.rowHeight = 115
         
         let model = RecommendModel()
         model.getRecommendList { (recommendList) in

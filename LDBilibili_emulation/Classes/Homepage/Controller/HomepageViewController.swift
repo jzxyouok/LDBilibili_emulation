@@ -8,12 +8,11 @@
 
 import UIKit
 
-class HomepageViewController: UIViewController {
+class HomepageViewController: LDSubfieldViewController {
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
         setupChildViewControllers()
+        super.viewDidLoad()
     }
     
     override func viewDidAppear(_ animated: Bool) {
