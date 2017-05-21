@@ -17,7 +17,6 @@ class LDSubfieldTitleView: UIView {
 
     weak var delegate : LDSubfieldTitleViewDelegate?
     var titles : [String]
-    var style = nil
     fileprivate lazy var titleLabels :[UILabel] = [UILabel]()
     fileprivate lazy var currentIndex = 0
     fileprivate lazy var normalRGB : (CGFloat,CGFloat,CGFloat) = self.style.normalColor.getRGBValue()
@@ -58,10 +57,9 @@ class LDSubfieldTitleView: UIView {
         
     }()
     
-    init(frame: CGRect,titles :[String],style :ZPStyle) {
+    init(frame: CGRect,titles :[String]) {
         
         self.titles=titles
-        self.style=style
         super.init(frame: frame)
         
         setupUI()
@@ -282,8 +280,6 @@ extension LDSubfieldTitleView
     }
     fileprivate func adjustLabelPosition()
     {
-        guard style.isScrollEnabled else { return }
-        
         //调整点击Label的位置,滚动到中间位置;
         let targetLabel = titleLabels[currentIndex]
         
@@ -296,16 +292,10 @@ extension LDSubfieldTitleView
         //设置最大滚动范围;
         let maxOffsetX = scrollView.contentSize.width - bounds.width;
         
-        if offsetX > maxOffsetX && maxOffsetX > 0
-        {
-            offsetX = maxOffsetX
-        }
-        
-        
         scrollView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
     }
     
     
 }
 
-}
+
