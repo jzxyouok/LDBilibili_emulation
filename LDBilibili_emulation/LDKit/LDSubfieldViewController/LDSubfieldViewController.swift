@@ -35,8 +35,8 @@ class LDSubfieldViewController: UIViewController, UICollectionViewDataSource, UI
         self.contentView.addSubview(collectionView)
         collectionView.collectionViewLayout = flowLayout
         collectionView.isPagingEnabled = true
-        collectionView.bounces = false
-        collectionView.showsHorizontalScrollIndicator = false
+//        collectionView.bounces = false
+//        collectionView.showsHorizontalScrollIndicator = false
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.scrollsToTop = false

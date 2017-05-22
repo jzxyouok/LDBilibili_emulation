@@ -31,6 +31,7 @@
 		AD5BDFFD1ECC9EE200F01FC1 /* LDSubfieldFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFFC1ECC9EE200F01FC1 /* LDSubfieldFlowLayout.swift */; };
 		AD5BDFFF1ECDD6F400F01FC1 /* LDSubfieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BDFFE1ECDD6F400F01FC1 /* LDSubfieldStyle.swift */; };
 		AD5BE0011ECDEF1900F01FC1 /* LDSubfieldTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE0001ECDEF1900F01FC1 /* LDSubfieldTitleView.swift */; };
+		AD5BE0031ED3350000F01FC1 /* LDSubfieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE0021ED3350000F01FC1 /* LDSubfieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		AD5BDFFC1ECC9EE200F01FC1 /* LDSubfieldFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDSubfieldFlowLayout.swift; sourceTree = "<group>"; };
 		AD5BDFFE1ECDD6F400F01FC1 /* LDSubfieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDSubfieldStyle.swift; sourceTree = "<group>"; };
 		AD5BE0001ECDEF1900F01FC1 /* LDSubfieldTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDSubfieldTitleView.swift; sourceTree = "<group>"; };
+		AD5BE0021ED3350000F01FC1 /* LDSubfieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LDSubfieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +376,7 @@
 				AD5BDFFC1ECC9EE200F01FC1 /* LDSubfieldFlowLayout.swift */,
 				AD5BDFFE1ECDD6F400F01FC1 /* LDSubfieldStyle.swift */,
 				AD5BE0001ECDEF1900F01FC1 /* LDSubfieldTitleView.swift */,
+				AD5BE0021ED3350000F01FC1 /* LDSubfieldView.swift */,
 			);
 			path = LDSubfieldViewController;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				AD5BDFD81EC3537200F01FC1 /* VideoDetailViewController.swift in Sources */,
 				AD4DE0001EB8CAE10008C6F9 /* LDTabBarController.swift in Sources */,
 				AD5BDFE41EC9E2E900F01FC1 /* RecommendContentCell.swift in Sources */,
+				AD5BE0031ED3350000F01FC1 /* LDSubfieldView.swift in Sources */,
 				AD5BDFFF1ECDD6F400F01FC1 /* LDSubfieldStyle.swift in Sources */,
 				AD5BDFED1EC9E49600F01FC1 /* LDSubfieldViewController.swift in Sources */,
 				AD5BDFE21EC9E06800F01FC1 /* RecommendViewController.swift in Sources */,

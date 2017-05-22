@@ -278,23 +278,6 @@ extension LDSubfieldTitleView
             })
         }
     }
-    fileprivate func adjustLabelPosition()
-    {
-        //调整点击Label的位置,滚动到中间位置;
-        let targetLabel = titleLabels[currentIndex]
-        
-        var offsetX = targetLabel.center.x - bounds.width * 0.5
-        
-        if offsetX < 0 {
-            offsetX = 0
-        }
-        
-        //设置最大滚动范围;
-        let maxOffsetX = scrollView.contentSize.width - bounds.width;
-        
-        scrollView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
-    }
-    
     
 }
 
