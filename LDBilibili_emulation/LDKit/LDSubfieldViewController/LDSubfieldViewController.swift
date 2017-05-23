@@ -35,8 +35,8 @@ class LDSubfieldViewController: UIViewController, UICollectionViewDataSource, UI
         self.contentView.addSubview(collectionView)
         collectionView.collectionViewLayout = flowLayout
         collectionView.isPagingEnabled = true
-//        collectionView.bounces = false
-//        collectionView.showsHorizontalScrollIndicator = false
+        collectionView.bounces = false
+        collectionView.showsHorizontalScrollIndicator = false
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.scrollsToTop = false
@@ -84,10 +84,11 @@ class LDSubfieldViewController: UIViewController, UICollectionViewDataSource, UI
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentity, for: indexPath)
-//        cell.contentView.subviews.forEach { (view) in
-//            print(view)
-//            view.removeFromSuperview()
-//        }
+        //移除旧的View
+        for subView in cell.contentView.subviews {
+            
+            subView.removeFromSuperview()
+        }
         let vc = self.childViewControllers[indexPath.row]
         vc.view.frame = self.view.frame
         cell.contentView.addSubview(vc.view)
@@ -104,3 +105,79 @@ class LDSubfieldViewController: UIViewController, UICollectionViewDataSource, UI
     }
     
 }
+
+//MARK -UICollectionView代理方法 --UICollectionViewDelegate
+extension ZPContentView : UICollectionViewDelegate
+{
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        isForbidDelegate=false
+        startOffsetX=scrollView.contentOffset.x
+    }
+    
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        scrollViewDIdEndScroll()
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if !decelerate
+        {
+            scrollViewDIdEndScroll()
+        }
+    }
+    
+    // MARK :  停止滚动
+    private func scrollViewDIdEndScroll()
+    {
+        
+        let targetIndex = Int(collectionView.contentOffset.x / collectionView.bounds.width)
+        
+        delegate?.contentView(self, didEndScroll: targetIndex)
+    }
+    
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        let contentOffsetX = scrollView.contentOffset.x
+        
+        guard contentOffsetX != startOffsetX && !isForbidDelegate else {
+            return
+        }
+        
+        //定义需要获取的变量
+        var sourceIndex = 0
+        var targetIndex = 0
+        var progress : CGFloat = 0
+        let collectionWidth = collectionView.bounds.width
+        
+        //左侧滑动
+        if contentOffsetX > startOffsetX  {
+            sourceIndex = Int(contentOffsetX / collectionWidth)
+            targetIndex = sourceIndex + 1
+            
+            progress = CGFloat(scrollView.contentOffset.x).truncatingRemainder(dividingBy: CGFloat(collectionWidth)) / CGFloat(collectionWidth)
+            
+            if((contentOffsetX - startOffsetX)==collectionWidth)
+            {
+                progress = 1
+                targetIndex=sourceIndex
+            }
+        }
+        else{
+            //右侧滑动
+            targetIndex = Int(contentOffsetX / collectionWidth)
+            
+            sourceIndex = targetIndex + 1
+            
+            progress = 1 - (CGFloat(scrollView.contentOffset.x).truncatingRemainder(dividingBy: CGFloat(collectionWidth)) / CGFloat(collectionWidth))
+            
+        }
+        if targetIndex > childVcs.count - 1 || targetIndex < 0 || sourceIndex > childVcs.count - 1 {
+            return
+        }
+        delegate?.contentView(self, sourceIndex: sourceIndex, targetIndex: targetIndex, progress: progress)
+        
+    }
+}
+
