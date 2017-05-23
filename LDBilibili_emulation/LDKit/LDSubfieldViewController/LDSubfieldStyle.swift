@@ -21,7 +21,6 @@ public struct LDSubfieldStyle {
     public var selecteColor: UIColor = .orange                     //文本选中颜色
     
     public var isScrollEnabled : Bool = true //标题能否滚动
-    public  var  titleMargin : CGFloat  = 20  //能滚动情况下,文字的间距
     
     public var isShowBottomLine : Bool = true //是否显示底部Line
     public   var bottomLineColor : UIColor = .orange //line颜色

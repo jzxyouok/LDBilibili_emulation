@@ -32,17 +32,17 @@ public extension LDSubfieldView {
 }
 public class LDSubfieldView: UIView {
     
-    public  weak var dataSource :ZPPageBarViewDataSource?
+    public  weak var dataSource :LDSubfieldViewDataSource?
     fileprivate lazy var currentIndex : IndexPath = IndexPath(item: 0, section: 0)
     fileprivate var titles : [String]
-    fileprivate var style : ZPStyle
-    fileprivate var layout : ZPPageBarLayout
+    fileprivate var style : LDSubfieldStyle
+    fileprivate var layout : LDSubfieldFlowLayout
     
     fileprivate var titleView : ZPTitleView!
     fileprivate var collectionView : UICollectionView!
     fileprivate var pageControll   : UIPageControl!
     
-    public init(frame:CGRect , titles : [String] , style:ZPStyle ,layout : ZPPageBarLayout) {
+    public init(frame:CGRect , titles : [String] , style:LDSubfieldFlowLayout ,layout : ZPPageBarLayout) {
         self.titles=titles
         self.style=style
         self.layout=layout
