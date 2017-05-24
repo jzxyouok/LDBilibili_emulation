@@ -29,4 +29,14 @@ public struct LDSubfieldStyle {
     
     public  var isNeedScale : Bool = true //是否需要缩放动画效果
     public  var maxScale : CGFloat = 1.2 //放大系数;
+    
+    public var isShowCover : Bool = false //是否显示遮盖效果
+    public  var coverViewColor : UIColor = .black //遮盖颜色
+    public  var coverViewHeight : CGFloat = 25 //遮盖高度
+    public  var coverViewRadius : CGFloat = 12 //遮盖圆角
+    public var coverViewAlpha : CGFloat  = 0.7 //遮盖透明度
+    public  var coverViewMargin : CGFloat = 8 //遮盖间距
+    
+    public var isTitleIntop : Bool = true //标题是否在顶部
+    public var pageControlHeight : CGFloat = 20 // pageControl 的高度
 }

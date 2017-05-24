@@ -10,11 +10,11 @@ import UIKit
 
 public protocol LDSubfieldViewDataSource : class {
     
-    func numberOfSections(in pageBarView: ZPPageBarView) -> Int
+    func numberOfSections(in pageBarView: LDSubfieldView) -> Int
     
-    func pageBarView(_ pageBarView: ZPPageBarView, numberOfItemsInSection section: Int) -> Int
+    func pageBarView(_ pageBarView: LDSubfieldView, numberOfItemsInSection section: Int) -> Int
     
-    func pageBarView(_ pageBarView: ZPPageBarView, collectionView : UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    func pageBarView(_ pageBarView: LDSubfieldView, collectionView : UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
 }
 
 public extension LDSubfieldView {
@@ -42,7 +42,7 @@ public class LDSubfieldView: UIView {
     fileprivate var collectionView : UICollectionView!
     fileprivate var pageControll   : UIPageControl!
     
-    public init(frame:CGRect , titles : [String] , style:LDSubfieldFlowLayout ,layout : ZPPageBarLayout) {
+    public init(frame:CGRect , titles : [String] , style:LDSubfieldFlowLayout ,layout : LDSubfieldFlowLayout) {
         self.titles=titles
         self.style=style
         self.layout=layout
@@ -58,7 +58,7 @@ public class LDSubfieldView: UIView {
 }
 
 //MARK -UI布局
-extension ZPPageBarView
+extension LDSubfieldView
 {
     
     fileprivate func setupUI()
