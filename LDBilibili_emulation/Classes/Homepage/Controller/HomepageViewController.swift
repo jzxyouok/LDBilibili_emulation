@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HomepageViewController: LDSubfieldViewController {
+class HomepageViewController: UIViewController {
     
     override func viewDidLoad() {
         setupChildViewControllers()
