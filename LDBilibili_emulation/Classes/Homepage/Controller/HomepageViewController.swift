@@ -11,7 +11,14 @@ import UIKit
 class HomepageViewController: UIViewController {
     
     override func viewDidLoad() {
-        setupChildViewControllers()
+        let lVC = LiveViewController()
+        lVC.title = "直播"
+        
+        let rVC = RecommendViewController()
+        rVC.title = "推荐"
+        
+        let bVC = BangumiViewController()
+        bVC.title = "追番"
         
         var style = ZPStyle()
         style.isScrollEnabled = true; //标题是否可以滚动,默认为true;
@@ -38,21 +45,6 @@ class HomepageViewController: UIViewController {
         
         self.navigationController?.navigationBar.alpha = 0
         self.navigationController?.navigationBar.superview?.sendSubview(toBack: (self.navigationController?.navigationBar)!)
-    }
-    
-    
-    func setupChildViewControllers() {
-        let lVC = LiveViewController()
-        lVC.title = "直播"
-        addChildViewController(lVC)
-        
-        let rVC = RecommendViewController()
-        rVC.title = "推荐"
-        addChildViewController(rVC)
-        
-        let bVC = BangumiViewController()
-        bVC.title = "追番"
-        addChildViewController(bVC)
     }
 }
 
