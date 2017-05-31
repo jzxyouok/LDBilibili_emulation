@@ -39,11 +39,11 @@ extension ZPSegmentBarView
     fileprivate func setupUI()
     {
         //1.0 创建TitleView 
-        let titleFrame = CGRect(x: 0, y: 64, width: bounds.width, height: style.titleHeight)
+        let titleFrame = CGRect(x: 0, y: 20, width: bounds.width, height: style.titleHeight)
         
         let titleView = ZPTitleView(frame: titleFrame, titles: titles, style: style)
         addSubview(titleView)
-        titleView.backgroundColor = UIColor.gray
+        titleView.backgroundColor = style.titleViewBackgroundColor
         
        
         

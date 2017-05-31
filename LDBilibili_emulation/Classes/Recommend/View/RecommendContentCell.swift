@@ -14,7 +14,7 @@ class RecommendContentCell: UITableViewCell {
 
     lazy var coverImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.backgroundColor = UIColor.colorWithHexValue(hexValue: 0xd1d1d1)
+        imageView.backgroundColor = UIColor.colorWithHexString(hex: "#d1d1d1")
         imageView.layer.cornerRadius = 5
         imageView.clipsToBounds = true
         self.contentView.addSubview(imageView)
@@ -30,7 +30,7 @@ class RecommendContentCell: UITableViewCell {
     
     lazy var vtitleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.colorWithHexValue(hexValue: 0x333333)
+        label.textColor = UIColor.colorWithHexString(hex: "#333333")
         label.font = UIFont.systemFont(ofSize: 12)
         label.numberOfLines = 2
         self.contentView.addSubview(label)
@@ -57,7 +57,7 @@ class RecommendContentCell: UITableViewCell {
     
     lazy var pageViewLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.colorWithHexValue(hexValue: 0x999999)
+        label.textColor = UIColor.colorWithHexString(hex: "#999999")
         label.font = UIFont.systemFont(ofSize: 10)
         self.contentView.addSubview(label)
         label.snp.makeConstraints({ (make) in
@@ -84,7 +84,7 @@ class RecommendContentCell: UITableViewCell {
     
     lazy var commentCountLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.colorWithHexValue(hexValue: 0x999999)
+        label.textColor = UIColor.colorWithHexString(hex: "#999999")
         label.font = UIFont.systemFont(ofSize: 10)
         self.contentView.addSubview(label)
         label.snp.makeConstraints({ (make) in
@@ -96,7 +96,7 @@ class RecommendContentCell: UITableViewCell {
     
     lazy var tagLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.colorWithHexValue(hexValue: 0xd5d5d5)
+        label.textColor = UIColor.colorWithHexString(hex: "#d5d5d5")
         label.font = UIFont.systemFont(ofSize: 10)
         self.contentView.addSubview(label)
         label.snp.makeConstraints({ (make) in

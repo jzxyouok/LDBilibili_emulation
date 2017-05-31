@@ -158,7 +158,22 @@ extension ZPTitleView
              titleLabelW = (titleLabe.text! as NSString).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 0), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName : style.titleFont], context: nil).width
             
             if style.isScrollEnabled {//可以滚动
-                titlelabelX = index == 0 ? style.titleMargin*0.5 : titleLabels[index-1].frame.maxX + style.titleMargin
+                
+                for titleLabel in titleLabels {
+                    titleLabelW = (titleLabel.text! as NSString).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 0), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName : style.titleFont], context: nil).width
+                    totalWidth = totalWidth + titleLabelW
+                }
+                
+                var initX: CGFloat = 0
+                if style.isNeedCenter {
+                    initX = (self.bounds.size.width - totalWidth - CGFloat(titleLabels.count - 1) * style.titleMargin)/2.0
+                }
+                else{
+                    initX = style.titleMargin*0.5
+                }
+                
+                
+                titlelabelX = index == 0 ? initX : titleLabels[index-1].frame.maxX + style.titleMargin
             }
             else{
                 //不可以滚动
@@ -250,8 +265,9 @@ extension ZPTitleView
         currentIndex = targetLabel.tag
         
         // 4.调整点击的Label的位置,滚动到中间去
-        
-        adjustLabelPosition()
+        if !style.isNeedCenter {
+            adjustLabelPosition()
+        }
         
         // 6.调整文字缩放
         if style.isNeedScale {
@@ -314,7 +330,9 @@ extension ZPTitleView: ZPContentViewDelegate
     func contentView(_ contentView: ZPContentView, didEndScroll targetIndex: Int) {
         
         currentIndex=targetIndex
-        adjustLabelPosition()
+        if !style.isNeedCenter {
+            adjustLabelPosition()
+        }
     }
     
     func contentView(_ contentView: ZPContentView, sourceIndex: Int, targetIndex: Int, progress: CGFloat) {

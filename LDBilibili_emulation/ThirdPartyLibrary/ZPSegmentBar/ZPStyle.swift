@@ -15,10 +15,10 @@ public struct ZPStyle {
     }
 
     public var titleViewBackgroundColor = UIColor.purple             //titleView 的背景颜色
-    public var ContentViewBackgroundColor = UIColor.gray             //contentView 的背景颜色
+    public var ContentViewBackgroundColor = UIColor.white             //contentView 的背景颜色
     
     public var titleHeight : CGFloat = 44                            //ZPTitleView 的高度
-    public var titleFont   : UIFont  = UIFont.systemFont(ofSize: 14) //title的字体
+    public var titleFont   : UIFont  = UIFont.systemFont(ofSize: 16) //title的字体
     public var normalColor : UIColor = .white                       //文本普通颜色
     public var selecteColor: UIColor = .orange                     //文本选中颜色
     
@@ -31,7 +31,7 @@ public struct ZPStyle {
     
     
     public  var isNeedScale : Bool = true //是否需要缩放动画效果
-    public  var maxScale : CGFloat = 1.2 //放大系数;
+    public  var maxScale : CGFloat = 1.1 //放大系数;
     
 
     public var isShowCover : Bool = false //是否显示遮盖效果
@@ -44,5 +44,6 @@ public struct ZPStyle {
     public var isTitleIntop : Bool = true //标题是否在顶部
     public var pageControlHeight : CGFloat = 20 // pageControl 的高度
     
+     public  var isNeedCenter : Bool = false //是否居中
     
 }
