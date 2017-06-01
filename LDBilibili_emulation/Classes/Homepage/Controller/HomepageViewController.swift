@@ -26,12 +26,13 @@ class HomepageViewController: UIViewController {
         style.isShowBottomLine = true
         style.isNeedScale = true
         style.isNeedCenter = true
+        style.titleMargin = 40
+        style.titleFont = UIFont.systemFont(ofSize: 17)
         style.titleViewBackgroundColor = UIColor.themeColor()
         
         let frame = CGRect(x: 0, y: 0, width: view.width, height: view.height - 69)
         let segmentView = ZPSegmentBarView(frame: frame, titles: tList, style: style, childVcs: vList, parentVc: self)
         view.addSubview(segmentView)
-        view.bringSubview(toFront: segmentView)
     }
     
     override func viewDidAppear(_ animated: Bool) {

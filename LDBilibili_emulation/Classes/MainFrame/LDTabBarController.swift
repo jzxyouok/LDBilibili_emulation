@@ -13,6 +13,7 @@ class LDTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.tabBar.tintColor = UIColor.themeColor()
         addChildViewController(childViewController: HomepageViewController(), title: "首页", selectImage: "home_tab")
     }
     

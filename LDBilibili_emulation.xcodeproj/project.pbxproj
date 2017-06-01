@@ -532,6 +532,7 @@
 				TargetAttributes = {
 					AD4166E41E7DB66F0033D506 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WAA8S3UUC9;
 						ProvisioningStyle = Automatic;
 					};
 					AD4166F81E7DB66F0033D506 = {
@@ -801,6 +802,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WAA8S3UUC9;
 				INFOPLIST_FILE = LDBilibili_emulation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -816,6 +820,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WAA8S3UUC9;
 				INFOPLIST_FILE = LDBilibili_emulation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
