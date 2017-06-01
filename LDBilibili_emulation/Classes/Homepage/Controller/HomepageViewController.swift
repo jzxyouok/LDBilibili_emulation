@@ -31,19 +31,16 @@ class HomepageViewController: UIViewController {
         let frame = CGRect(x: 0, y: 0, width: view.width, height: view.height - 69)
         let segmentView = ZPSegmentBarView(frame: frame, titles: tList, style: style, childVcs: vList, parentVc: self)
         view.addSubview(segmentView)
+        view.bringSubview(toFront: segmentView)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        self.navigationController?.navigationBar.alpha = 0
         self.navigationController?.navigationBar.superview?.sendSubview(toBack: (self.navigationController?.navigationBar)!)
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        
-        self.navigationController?.navigationBar.alpha = 0
         self.navigationController?.navigationBar.superview?.sendSubview(toBack: (self.navigationController?.navigationBar)!)
     }
 }

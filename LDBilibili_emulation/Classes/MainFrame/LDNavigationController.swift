@@ -12,17 +12,17 @@ class LDNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // 临时解决方案
+        let statusView = UIView.init(frame: CGRect.init(x: 0, y: -20, width: navigationBar.width, height: 20))
+        statusView.backgroundColor = UIColor.themeColor()
+        navigationBar.addSubview(statusView)
     }
     
     override class func initialize() {
-        // 当导航栏用在LDNavigationController中appearance才会生效
         let navigationBar = UINavigationBar.appearance()
+        navigationBar.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
         navigationBar.tintColor = UIColor.themeColor()
-        
-//        let titleAttrs = NSMutableDictionary()
-//        titleAttrs[NSForegroundColorAttributeName] = UIColor.black
-//        titleAttrs[NSFontAttributeName] = UIFont.systemFont(ofSize: 17)
-//        navigationBar.titleTextAttributes = titleAttrs
     }
     
 }

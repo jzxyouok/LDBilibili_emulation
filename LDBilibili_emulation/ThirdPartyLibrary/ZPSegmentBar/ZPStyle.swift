@@ -20,13 +20,13 @@ public struct ZPStyle {
     public var titleHeight : CGFloat = 44                            //ZPTitleView 的高度
     public var titleFont   : UIFont  = UIFont.systemFont(ofSize: 16) //title的字体
     public var normalColor : UIColor = .white                       //文本普通颜色
-    public var selecteColor: UIColor = .orange                     //文本选中颜色
+    public var selecteColor: UIColor = .white                     //文本选中颜色
     
     public var isScrollEnabled : Bool = true //标题能否滚动
     public  var  titleMargin : CGFloat  = 20  //能滚动情况下,文字的间距
     
     public var isShowBottomLine : Bool = true //是否显示底部Line
-    public   var bottomLineColor : UIColor = .orange //line颜色
+    public   var bottomLineColor : UIColor = .white //line颜色
     public  var bottomLineHeight : CGFloat = 2 //Line的高度
     
     

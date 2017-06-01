@@ -206,7 +206,7 @@ extension ZPTitleView
         
         bottomLine.frame = titleLabels.first!.frame
         bottomLine.frame.size.height=style.bottomLineHeight
-        bottomLine.frame.origin.y=style.titleHeight-style.bottomLineHeight
+        bottomLine.frame.origin.y=style.titleHeight-style.bottomLineHeight - 2
         
     }
     
