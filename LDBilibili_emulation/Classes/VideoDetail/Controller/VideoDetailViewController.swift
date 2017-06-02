@@ -7,10 +7,42 @@
 //
 
 import UIKit
+import Kingfisher
+import SnapKit
 
 class VideoDetailViewController: UIViewController {
 
-    var recommend: RecommendObject?
+    var recommend: RecommendObject? {
+        didSet{
+            
+        }
+    }
+    
+    lazy var videoView: UIView = {
+        let videoView = UIView()
+//        videoView.
+        return videoView
+    }()
+    
+    lazy var coverImg: UIImageView = {
+        let coverImg = UIImageView()
+        self.view.addSubview(coverImg)
+        coverImg.snp.makeConstraints({ (make) in
+            make.top.equalTo(0)
+            make.left.equalTo(0)
+            make.height.equalTo(210)
+            make.width.equalTo(self.view.width)
+        })
+        return coverImg
+    }()
+    
+    lazy var playBtn: UIButton = {
+        let playBtn = UIButton()
+        
+        playBtn.setImage(UIImage.init(named: "play_btn"), for: UIControlState.normal)
+        
+        return playBtn
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()

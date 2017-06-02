@@ -12,7 +12,8 @@ class HomepageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        automaticallyAdjustsScrollViewInsets=false
+        
+        automaticallyAdjustsScrollViewInsets = false
         
         let lVC = LiveViewController()
         let rVC = RecommendViewController()
