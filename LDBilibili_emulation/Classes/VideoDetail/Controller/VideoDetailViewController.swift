@@ -15,6 +15,7 @@ class VideoDetailViewController: UIViewController {
     var recommend: RecommendObject? {
         didSet{
             self.coverImg.kf.setImage(with: URL(string: (recommend?.cover)!))
+            self.playBtn.setImage(UIImage.init(named: "play_btn"), for: UIControlState.normal)
         }
     }
     
@@ -44,9 +45,13 @@ class VideoDetailViewController: UIViewController {
     
     lazy var playBtn: UIButton = {
         let playBtn = UIButton()
-        
-        playBtn.setImage(UIImage.init(named: "play_btn"), for: UIControlState.normal)
         self.videoView.addSubview(playBtn)
+        playBtn.snp.makeConstraints({ (make) in
+            make.bottom.equalTo(-20)
+            make.height.equalTo(40)
+            make.width.equalTo(50)
+            make.right.equalTo(-10)
+        })
         
         return playBtn
     }()

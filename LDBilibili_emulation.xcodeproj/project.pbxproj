@@ -34,6 +34,7 @@
 		AD5BE0121ED72A4A00F01FC1 /* ZPSegmentBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE00B1ED72A4A00F01FC1 /* ZPSegmentBarView.swift */; };
 		AD5BE0131ED72A4A00F01FC1 /* ZPStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE00C1ED72A4A00F01FC1 /* ZPStyle.swift */; };
 		AD5BE0141ED72A4A00F01FC1 /* ZPTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE00D1ED72A4A00F01FC1 /* ZPTitleView.swift */; };
+		AD5BE0151EE4438500F01FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4DDFE91EB8C7110008C6F9 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -581,6 +582,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD5BE0151EE4438500F01FC1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
