@@ -35,6 +35,7 @@
 		AD5BE0131ED72A4A00F01FC1 /* ZPStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE00C1ED72A4A00F01FC1 /* ZPStyle.swift */; };
 		AD5BE0141ED72A4A00F01FC1 /* ZPTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE00D1ED72A4A00F01FC1 /* ZPTitleView.swift */; };
 		AD5BE0151EE4438500F01FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4DDFE91EB8C7110008C6F9 /* Assets.xcassets */; };
+		AD5BE0171EE6E0D100F01FC1 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE0161EE6E0D100F01FC1 /* VideoPlayerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		AD5BE00B1ED72A4A00F01FC1 /* ZPSegmentBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPSegmentBarView.swift; sourceTree = "<group>"; };
 		AD5BE00C1ED72A4A00F01FC1 /* ZPStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPStyle.swift; sourceTree = "<group>"; };
 		AD5BE00D1ED72A4A00F01FC1 /* ZPTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPTitleView.swift; sourceTree = "<group>"; };
+		AD5BE0161EE6E0D100F01FC1 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				AD5BDFD71EC3537200F01FC1 /* VideoDetailViewController.swift */,
+				AD5BE0161EE6E0D100F01FC1 /* VideoPlayerViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -660,6 +663,7 @@
 				AD5BDFD81EC3537200F01FC1 /* VideoDetailViewController.swift in Sources */,
 				AD4DE0001EB8CAE10008C6F9 /* LDTabBarController.swift in Sources */,
 				AD5BE00F1ED72A4A00F01FC1 /* ZPContentView.swift in Sources */,
+				AD5BE0171EE6E0D100F01FC1 /* VideoPlayerViewController.swift in Sources */,
 				AD5BDFE41EC9E2E900F01FC1 /* RecommendContentCell.swift in Sources */,
 				AD5BDFE21EC9E06800F01FC1 /* RecommendViewController.swift in Sources */,
 				AD5BE0141ED72A4A00F01FC1 /* ZPTitleView.swift in Sources */,
