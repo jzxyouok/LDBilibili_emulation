@@ -37,6 +37,7 @@
 		AD5BE0151EE4438500F01FC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4DDFE91EB8C7110008C6F9 /* Assets.xcassets */; };
 		AD5BE0171EE6E0D100F01FC1 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE0161EE6E0D100F01FC1 /* VideoPlayerViewController.swift */; };
 		AD5BE01B1EE84DF600F01FC1 /* YPMediaControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE01A1EE84DF600F01FC1 /* YPMediaControl.m */; };
+		AD5BE01E1EE9A96300F01FC1 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE01D1EE9A96300F01FC1 /* VideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,8 @@
 		AD5BE0181EE84DF500F01FC1 /* LDBilibili_emulation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LDBilibili_emulation-Bridging-Header.h"; sourceTree = "<group>"; };
 		AD5BE0191EE84DF600F01FC1 /* YPMediaControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPMediaControl.h; sourceTree = "<group>"; };
 		AD5BE01A1EE84DF600F01FC1 /* YPMediaControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPMediaControl.m; sourceTree = "<group>"; };
+		AD5BE01C1EE9A96300F01FC1 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		AD5BE01D1EE9A96300F01FC1 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +321,8 @@
 			children = (
 				AD5BDFD71EC3537200F01FC1 /* VideoDetailViewController.swift */,
 				AD5BE0161EE6E0D100F01FC1 /* VideoPlayerViewController.swift */,
+				AD5BE01C1EE9A96300F01FC1 /* VideoViewController.h */,
+				AD5BE01D1EE9A96300F01FC1 /* VideoViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -674,6 +679,7 @@
 				AD5BE0171EE6E0D100F01FC1 /* VideoPlayerViewController.swift in Sources */,
 				AD5BE01B1EE84DF600F01FC1 /* YPMediaControl.m in Sources */,
 				AD5BDFE41EC9E2E900F01FC1 /* RecommendContentCell.swift in Sources */,
+				AD5BE01E1EE9A96300F01FC1 /* VideoViewController.m in Sources */,
 				AD5BDFE21EC9E06800F01FC1 /* RecommendViewController.swift in Sources */,
 				AD5BE0141ED72A4A00F01FC1 /* ZPTitleView.swift in Sources */,
 				AD4DE0651EBB77100008C6F9 /* UIColor+Extensions.swift in Sources */,
