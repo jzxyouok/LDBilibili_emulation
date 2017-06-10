@@ -23,6 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self ijkPlayer];
 }
 
 - (MPMoviePlayerViewController *)playerVc
@@ -47,7 +49,7 @@
         _playerController = [[MPMoviePlayerController alloc] initWithContentURL:url];
         
         // 3.设置控制器view的位置
-        _playerController.view.frame = CGRectMake(0, 0, self.view.width, self.view.width * 9 / 16);
+        _playerController.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width * 9 / 16);
         
         // 4.将view添加到控制器上
         [self.view addSubview:_playerController.view];
@@ -74,5 +76,18 @@
     return _player;
 }
 
+- (void)ijkPlayer
+{
+    //    NSURL *url = [NSURL URLWithString:@"http://175.25.168.26/live-play.acgvideo.com/live/324/live_437038_4368633.flv?1988&wshc_tag=0&wsts_tag=57381fcc&wsid_tag=65fe8c63&wsiphost=ipdbm"];
+    
+    NSURL *url = [NSURL URLWithString:@"http://cn-tj1-cu.acgvideo.com/vg119/4/fe/8041661-1.flv?expires=1466618400&ssig=OT6lPUVTwqnS2_6bQ271_w&oi=3733182991&appkey=f3bb208b3d081dc8&or=2099709835&rate=0"];
+    
+    //    NSURL *url = [NSURL URLWithString:@"http://cn-hbyc8-dx.acgvideo.com/vg5/5/47/8041661-1.flv?expires=1466597400&ssig=aUsXl6xF5aa0mLmggdq2uQ&oi=2034572434&appkey=f3bb208b3d081dc8&or=2081295465&rate=0"];
+    
+    NSString *scheme = [[url scheme] lowercaseString];
+    if ([scheme isEqualToString:@"http"] || [scheme isEqualToString:@"https"]) {
+        [MPMoviePlayerViewController presentFromViewController:self URL:url animated:YES];
+    }
+}
 
 @end

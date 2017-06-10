@@ -38,6 +38,7 @@
 		AD5BE0171EE6E0D100F01FC1 /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE0161EE6E0D100F01FC1 /* VideoPlayerViewController.swift */; };
 		AD5BE01B1EE84DF600F01FC1 /* YPMediaControl.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE01A1EE84DF600F01FC1 /* YPMediaControl.m */; };
 		AD5BE01E1EE9A96300F01FC1 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE01D1EE9A96300F01FC1 /* VideoViewController.m */; };
+		AD5BE0211EEC431D00F01FC1 /* LivePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE0201EEC431D00F01FC1 /* LivePlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,8 @@
 		AD5BE01A1EE84DF600F01FC1 /* YPMediaControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPMediaControl.m; sourceTree = "<group>"; };
 		AD5BE01C1EE9A96300F01FC1 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		AD5BE01D1EE9A96300F01FC1 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		AD5BE01F1EEC431D00F01FC1 /* LivePlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LivePlayerViewController.h; sourceTree = "<group>"; };
+		AD5BE0201EEC431D00F01FC1 /* LivePlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LivePlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +326,8 @@
 				AD5BE0161EE6E0D100F01FC1 /* VideoPlayerViewController.swift */,
 				AD5BE01C1EE9A96300F01FC1 /* VideoViewController.h */,
 				AD5BE01D1EE9A96300F01FC1 /* VideoViewController.m */,
+				AD5BE01F1EEC431D00F01FC1 /* LivePlayerViewController.h */,
+				AD5BE0201EEC431D00F01FC1 /* LivePlayerViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -671,6 +676,7 @@
 				AD5BE0131ED72A4A00F01FC1 /* ZPStyle.swift in Sources */,
 				AD5BE0111ED72A4A00F01FC1 /* ZPPageBarView.swift in Sources */,
 				AD5BDFFB1EC9F3B800F01FC1 /* LiveViewController.swift in Sources */,
+				AD5BE0211EEC431D00F01FC1 /* LivePlayerViewController.m in Sources */,
 				AD5BE0121ED72A4A00F01FC1 /* ZPSegmentBarView.swift in Sources */,
 				AD4DDFFE1EB8CA8A0008C6F9 /* HomepageViewController.swift in Sources */,
 				AD5BDFD81EC3537200F01FC1 /* VideoDetailViewController.swift in Sources */,
