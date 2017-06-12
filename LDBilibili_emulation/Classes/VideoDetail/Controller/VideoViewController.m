@@ -86,7 +86,7 @@
     
     NSString *scheme = [[url scheme] lowercaseString];
     if ([scheme isEqualToString:@"http"] || [scheme isEqualToString:@"https"]) {
-        [MPMoviePlayerViewController presentFromViewController:self URL:url animated:YES];
+//        [MPMoviePlayerViewController presentFromViewController:self URL:url animated:YES];
     }
 }
 
