@@ -43,6 +43,7 @@
 		AD5BE0291EEEE5DD00F01FC1 /* YPAdjustSpeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE0251EEEE5DD00F01FC1 /* YPAdjustSpeedView.m */; };
 		AD5BE02A1EEEE5DD00F01FC1 /* YPAdjustSpeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5BE0261EEEE5DD00F01FC1 /* YPAdjustSpeedView.xib */; };
 		AD5BE02B1EEEE5DD00F01FC1 /* YPBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE0281EEEE5DD00F01FC1 /* YPBrightnessView.m */; };
+		C9040B241EEFCEB500920438 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9040B231EEFCEB500920438 /* IJKMediaFramework.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,7 +113,6 @@
 		AD5BE00C1ED72A4A00F01FC1 /* ZPStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPStyle.swift; sourceTree = "<group>"; };
 		AD5BE00D1ED72A4A00F01FC1 /* ZPTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZPTitleView.swift; sourceTree = "<group>"; };
 		AD5BE0161EE6E0D100F01FC1 /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
-		AD5BE0181EE84DF500F01FC1 /* LDBilibili_emulation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LDBilibili_emulation-Bridging-Header.h"; sourceTree = "<group>"; };
 		AD5BE0191EE84DF600F01FC1 /* YPMediaControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPMediaControl.h; sourceTree = "<group>"; };
 		AD5BE01A1EE84DF600F01FC1 /* YPMediaControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPMediaControl.m; sourceTree = "<group>"; };
 		AD5BE01C1EE9A96300F01FC1 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
@@ -125,6 +125,8 @@
 		AD5BE0261EEEE5DD00F01FC1 /* YPAdjustSpeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YPAdjustSpeedView.xib; sourceTree = "<group>"; };
 		AD5BE0271EEEE5DD00F01FC1 /* YPBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPBrightnessView.h; sourceTree = "<group>"; };
 		AD5BE0281EEEE5DD00F01FC1 /* YPBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPBrightnessView.m; sourceTree = "<group>"; };
+		C9040B231EEFCEB500920438 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		C9040B251EEFD39900920438 /* LDBilibili_emulation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LDBilibili_emulation-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B385D12EB6F1F37BE7E708E /* Pods_LDBilibili_emulation.framework in Frameworks */,
+				C9040B241EEFCEB500920438 /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,8 +192,8 @@
 			children = (
 				AD4DDFF31EB8C9600008C6F9 /* Classes */,
 				AD5BE0051ED72A4A00F01FC1 /* ThirdPartyLibrary */,
-				AD4DDFF01EB8C94B0008C6F9 /* Frameworks */,
 				AD4DDFE81EB8C7110008C6F9 /* Resource */,
+				C9040B221EEFCE9900920438 /* Frameworks */,
 				AD4DDFF11EB8C9560008C6F9 /* LDFoundation */,
 				AD4DE0031EB8CBEF0008C6F9 /* LDKit */,
 				AD4DDFD61EB8C39E0008C6F9 /* Supporting Files */,
@@ -219,6 +222,7 @@
 		AD4DDFD61EB8C39E0008C6F9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C9040B251EEFD39900920438 /* LDBilibili_emulation-Bridging-Header.h */,
 				AD4DDFD91EB8C3AD0008C6F9 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -231,13 +235,6 @@
 				AD4DDFEA1EB8C7110008C6F9 /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
-			sourceTree = "<group>";
-		};
-		AD4DDFF01EB8C94B0008C6F9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		AD4DDFF11EB8C9560008C6F9 /* LDFoundation */ = {
@@ -361,7 +358,6 @@
 				AD5BE0221EEEE5C000F01FC1 /* YPMediaControl.xib */,
 				AD5BE0191EE84DF600F01FC1 /* YPMediaControl.h */,
 				AD5BE01A1EE84DF600F01FC1 /* YPMediaControl.m */,
-				AD5BE0181EE84DF500F01FC1 /* LDBilibili_emulation-Bridging-Header.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -487,6 +483,14 @@
 				AD5BE00D1ED72A4A00F01FC1 /* ZPTitleView.swift */,
 			);
 			path = ZPSegmentBar;
+			sourceTree = "<group>";
+		};
+		C9040B221EEFCE9900920438 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9040B231EEFCEB500920438 /* IJKMediaFramework.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 		E0D003C8C1469F7D5E7B98C2 /* Frameworks */ = {
@@ -853,12 +857,16 @@
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WAA8S3UUC9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LDBilibili_emulation/Frameworks",
+				);
 				INFOPLIST_FILE = LDBilibili_emulation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xlDon.LDBilibili-emulation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LDBilibili_emulation/Classes/VideoDetail/View/LDBilibili_emulation-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "LDBilibili_emulation/LDBilibili_emulation-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -873,12 +881,16 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = WAA8S3UUC9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LDBilibili_emulation/Frameworks",
+				);
 				INFOPLIST_FILE = LDBilibili_emulation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "xlDon.LDBilibili-emulation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "LDBilibili_emulation/Classes/VideoDetail/View/LDBilibili_emulation-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "LDBilibili_emulation/LDBilibili_emulation-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

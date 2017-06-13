@@ -12,7 +12,7 @@
 #import <MediaPlayer/MediaPlayer.h>
 #import "YPBrightnessView.h"
 #import "YPAdjustSpeedView.h"
-#import "YPBufferingProgressView.h"
+//#import "YPBufferingProgressView.h"
 
 @interface YPMediaControl () <UIGestureRecognizerDelegate>
 
@@ -75,12 +75,12 @@
 
 
 #pragma mark - Public
-+ (instancetype)mediaControlWithGobackBlock:(YPMediaControlNormalBlock)goBackBlock
-{
-    YPMediaControl *control = [YPMediaControl viewFromXib];
-    control.gobackBlock = goBackBlock;
-    return control;
-}
+//+ (instancetype)mediaControlWithGobackBlock:(YPMediaControlNormalBlock)goBackBlock
+//{
+//    YPMediaControl *control = [YPMediaControl viewFromXib];
+//    control.gobackBlock = goBackBlock;
+//    return control;
+//}
 
 #pragma mark - Override
 - (void)awakeFromNib
@@ -105,17 +105,17 @@
     [YPBrightnessView sharedBrightnessView];
     
     // 配置调节速度View
-    YPAdjustSpeedView *speedView = [YPAdjustSpeedView viewFromXib];
-    _speedView = speedView;
-    speedView.layer.cornerRadius = 8;
-    speedView.layer.masksToBounds = YES;
-    [self addSubview:speedView];
-    [speedView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.mas_equalTo(CGSizeMake(150, 110));
-        make.centerX.equalTo(speedView.superview);
-        make.centerY.equalTo(speedView.superview);
-    }];
-    speedView.hidden = YES;
+//    YPAdjustSpeedView *speedView = [YPAdjustSpeedView viewFromXib];
+//    _speedView = speedView;
+//    speedView.layer.cornerRadius = 8;
+//    speedView.layer.masksToBounds = YES;
+//    [self addSubview:speedView];
+//    [speedView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.size.mas_equalTo(CGSizeMake(150, 110));
+//        make.centerX.equalTo(speedView.superview);
+//        make.centerY.equalTo(speedView.superview);
+//    }];
+//    speedView.hidden = YES;
     
     // 计时器
     [self createTimer];
@@ -126,58 +126,58 @@
     // 滑杆
     [_slider setThumbImage:[UIImage imageNamed:@"icmpv_thumb_light"] forState:UIControlStateNormal];
     
-    @weakify(self);
-    // 播放按钮
-    [[_playBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        @strongify(self);
-        // 改变播放状态
-        [self changePlayStatus];
-    }];
-    
-    // 返回按钮
-    [[_backBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
-        @strongify(self);
-        if (self.gobackBlock) {
-            self.gobackBlock();
-            [self.delegatePlayer stop];
-        }
-    }];
+//    @weakify(self);
+//    // 播放按钮
+//    [[_playBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+//        @strongify(self);
+//        // 改变播放状态
+//        [self changePlayStatus];
+//    }];
+//    
+//    // 返回按钮
+//    [[_backBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(id x) {
+//        @strongify(self);
+//        if (self.gobackBlock) {
+//            self.gobackBlock();
+//            [self.delegatePlayer stop];
+//        }
+//    }];
     
     // 注册缓冲的通知
-    [[YPNotificationCenter rac_addObserverForName:IJKMPMoviePlayerLoadStateDidChangeNotification object:nil] subscribeNext:^(NSNotification *noti) {
-        @strongify(self);
-        
-        // 释放资源
-        [self.bufferingTimer invalidate];
-        [[YPBufferingProgressView shareInstance] setProgress:0];
-        [YPBufferingProgressView dismiss];
-        
-        IJKFFMoviePlayerController *player = (IJKFFMoviePlayerController *)noti.object;
-        
-        if (player.loadState == IJKMPMovieLoadStateStalled) { // 缓冲开始
-            YPLog(@"缓冲开始");
-            
-            [YPBufferingProgressView showInView:self];
-            
-            // 开启定时器
-            self.bufferingTimer = [NSTimer scheduledTimerWithTimeInterval:0.5f target:self selector:@selector(buffering) userInfo:nil repeats:YES];
-            [[NSRunLoop mainRunLoop] addTimer:self.bufferingTimer forMode:NSRunLoopCommonModes];
-            
-        } else if (player.loadState == (IJKMPMovieLoadStatePlayable | IJKMPMovieLoadStatePlaythroughOK)) { // 缓冲结束
-            YPLog(@"缓冲结束");
-            // 释放资源
-            [self.bufferingTimer invalidate];
-            [[YPBufferingProgressView shareInstance] setProgress:0];
-            [YPBufferingProgressView dismiss];
-        }
-        
-    }];
+//    [[YPNotificationCenter rac_addObserverForName:IJKMPMoviePlayerLoadStateDidChangeNotification object:nil] subscribeNext:^(NSNotification *noti) {
+//        @strongify(self);
+//        
+//        // 释放资源
+//        [self.bufferingTimer invalidate];
+//        [[YPBufferingProgressView shareInstance] setProgress:0];
+//        [YPBufferingProgressView dismiss];
+//        
+//        IJKFFMoviePlayerController *player = (IJKFFMoviePlayerController *)noti.object;
+//        
+//        if (player.loadState == IJKMPMovieLoadStateStalled) { // 缓冲开始
+//            YPLog(@"缓冲开始");
+//            
+//            [YPBufferingProgressView showInView:self];
+//            
+//            // 开启定时器
+//            self.bufferingTimer = [NSTimer scheduledTimerWithTimeInterval:0.5f target:self selector:@selector(buffering) userInfo:nil repeats:YES];
+//            [[NSRunLoop mainRunLoop] addTimer:self.bufferingTimer forMode:NSRunLoopCommonModes];
+//            
+//        } else if (player.loadState == (IJKMPMovieLoadStatePlayable | IJKMPMovieLoadStatePlaythroughOK)) { // 缓冲结束
+//            YPLog(@"缓冲结束");
+//            // 释放资源
+//            [self.bufferingTimer invalidate];
+//            [[YPBufferingProgressView shareInstance] setProgress:0];
+//            [YPBufferingProgressView dismiss];
+//        }
+//        
+//    }];
 
 }
 
 - (void)dealloc
 {
-    [YPNotificationCenter removeObserver:self];
+//    [YPNotificationCenter removeObserver:self];
     [self.timer invalidate];
     [self.bufferingTimer invalidate];
     self.timer = nil;
@@ -189,8 +189,8 @@
 
 - (void)buffering
 {
-    YPLog(@"当前缓冲进度为 %zd",[self.delegatePlayer bufferingProgress]);
-    [[YPBufferingProgressView shareInstance] setProgress:[self.delegatePlayer bufferingProgress]];
+//    YPLog(@"当前缓冲进度为 %zd",[self.delegatePlayer bufferingProgress]);
+//    [[YPBufferingProgressView shareInstance] setProgress:[self.delegatePlayer bufferingProgress]];
 }
 
 /**
@@ -254,36 +254,36 @@
     if (!success) { /* handle the error in setCategoryError */ }
     
     // 监听耳机插入和拔掉通知
-    @weakify(self);
-    [[YPNotificationCenter rac_addObserverForName:AVAudioSessionRouteChangeNotification object:nil] subscribeNext:^(NSNotification *notification) {
-        
-        @strongify(self);
-        
-        NSDictionary *interuptionDict = notification.userInfo;
-        NSInteger routeChangeReason = [[interuptionDict valueForKey:AVAudioSessionRouteChangeReasonKey] integerValue];
-        
-        switch (routeChangeReason) {
-                
-            case AVAudioSessionRouteChangeReasonNewDeviceAvailable:
-                // 耳机插入
-                break;
-                
-            case AVAudioSessionRouteChangeReasonOldDeviceUnavailable:
-            {
-                // 耳机拔掉
-                // 拔掉耳机继续播放
-                if (![self.delegatePlayer isPlaying]) {
-                    [self.delegatePlayer play];
-                }
-            }
-                break;
-                
-            case AVAudioSessionRouteChangeReasonCategoryChange:
-                // called at start - also when other audio wants to play
-                NSLog(@"AVAudioSessionRouteChangeReasonCategoryChange");
-                break;
-        }
-    }];
+//    @weakify(self);
+//    [[YPNotificationCenter rac_addObserverForName:AVAudioSessionRouteChangeNotification object:nil] subscribeNext:^(NSNotification *notification) {
+//        
+//        @strongify(self);
+//        
+//        NSDictionary *interuptionDict = notification.userInfo;
+//        NSInteger routeChangeReason = [[interuptionDict valueForKey:AVAudioSessionRouteChangeReasonKey] integerValue];
+//        
+//        switch (routeChangeReason) {
+//                
+//            case AVAudioSessionRouteChangeReasonNewDeviceAvailable:
+//                // 耳机插入
+//                break;
+//                
+//            case AVAudioSessionRouteChangeReasonOldDeviceUnavailable:
+//            {
+//                // 耳机拔掉
+//                // 拔掉耳机继续播放
+//                if (![self.delegatePlayer isPlaying]) {
+//                    [self.delegatePlayer play];
+//                }
+//            }
+//                break;
+//                
+//            case AVAudioSessionRouteChangeReasonCategoryChange:
+//                // called at start - also when other audio wants to play
+//                NSLog(@"AVAudioSessionRouteChangeReasonCategoryChange");
+//                break;
+//        }
+//    }];
 }
 
 /**
@@ -392,13 +392,13 @@
  */
 - (void)horizontalMoved:(CGFloat)value
 {
-    // 快进快退的方法
-    if (value < 0) {
-        _speedView.iconImageView.transform = CGAffineTransformIdentity;
-    }
-    if (value > 0) {
-        _speedView.iconImageView.transform = CGAffineTransformMakeRotation(YPAngle2Radian(180));
-    }
+//    // 快进快退的方法
+//    if (value < 0) {
+//        _speedView.iconImageView.transform = CGAffineTransformIdentity;
+//    }
+//    if (value > 0) {
+//        _speedView.iconImageView.transform = CGAffineTransformMakeRotation(YPAngle2Radian(180));
+//    }
     
     // 每次滑动需要叠加时间
     _sumTime += value / 66;
@@ -418,13 +418,13 @@
     
     NSString *speedViewSpeedText = [NSString stringWithFormat:@"%ld秒 - 中速进退",(NSInteger)(_sumTime - _beginTime)];
     
-    _speedView.detailLabel.text = speedViewDetailText;
-    _speedView.speedLabel.text = speedViewSpeedText;
+//    _speedView.detailLabel.text = speedViewDetailText;
+//    _speedView.speedLabel.text = speedViewSpeedText;
     
     // 改变进度
     NSTimeInterval progress = _sumTime / totalTime;
     
-    _speedView.progressView.progress = progress;
+//    _speedView.progressView.progress = progress;
     _progressView.progress = progress;
     _slider.value = progress;
 }
@@ -494,7 +494,7 @@
             if (x > y) { // 水平移动
                 
                 // 取消隐藏
-                _speedView.hidden = NO;
+//                _speedView.hidden = NO;
                 
                 // 转变状态 之后根据这个状态做事情
                 _panDirection = PanDirectionHorizontalMoved;
@@ -511,7 +511,7 @@
                 // 转变状态 之后根据这个状态做事情
                 _panDirection = PanDirectionVerticalMoved;
                 
-                if (locationPoint.x > self.width / 2) { // 状态改为显示音量调节
+                if (locationPoint.x > self.frame.size.width / 2) { // 状态改为显示音量调节
                     _isVolume = YES;
                 }else { // 状态改为显示亮度调节
                     _isVolume = NO;
@@ -547,7 +547,7 @@
                     
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                         // 隐藏视图
-                        _speedView.hidden = YES;
+//                        _speedView.hidden = YES;
                     });
                     
                     // 视频跳转
@@ -563,7 +563,7 @@
                     _isVolume = NO;
                     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                         // 隐藏视图
-                        _speedView.hidden = YES;
+//                        _speedView.hidden = YES;
                     });
                     break;
                 }

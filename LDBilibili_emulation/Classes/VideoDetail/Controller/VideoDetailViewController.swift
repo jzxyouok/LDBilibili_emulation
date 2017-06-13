@@ -52,14 +52,12 @@ class VideoDetailViewController: UIViewController {
             make.width.equalTo(50)
             make.right.equalTo(-10)
         })
-        
+        playBtn.addTarget(self, action: #selector(playVideo), for: UIControlEvents.touchUpInside)
         return playBtn
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
     }
     
@@ -73,5 +71,10 @@ class VideoDetailViewController: UIViewController {
         super.viewWillDisappear(animated)
         let nav = self.navigationController as! LDNavigationController
         nav.statusHidden = false
+    }
+    
+    func playVideo(_ button:UIButton) {
+        let vc = VideoPlayerViewController()
+        self.navigationController.
     }
 }
