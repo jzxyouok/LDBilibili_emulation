@@ -74,7 +74,7 @@ class VideoDetailViewController: UIViewController {
     }
     
     func playVideo(_ button:UIButton) {
-        let vc = VideoPlayerViewController()
-        self.navigationController.
+        let url = URL.init(string: "http://v1.mukewang.com/a45016f4-08d6-4277-abe6-bcfd5244c201/L.mp4")
+        VideoPlayerViewController.presentFromViewController(viewController: self, url: url!, animated: true)
     }
 }

@@ -75,12 +75,12 @@
 
 
 #pragma mark - Public
-//+ (instancetype)mediaControlWithGobackBlock:(YPMediaControlNormalBlock)goBackBlock
-//{
-//    YPMediaControl *control = [YPMediaControl viewFromXib];
-//    control.gobackBlock = goBackBlock;
-//    return control;
-//}
++ (instancetype)mediaControlWithGobackBlock:(YPMediaControlNormalBlock)goBackBlock
+{
+    YPMediaControl *control = [[[NSBundle mainBundle] loadNibNamed:@"YPMediaControl" owner:nil options:nil] lastObject];
+    control.gobackBlock = goBackBlock;
+    return control;
+}
 
 #pragma mark - Override
 - (void)awakeFromNib

@@ -14,9 +14,14 @@ class VideoPlayerViewController: UIViewController {
     var videoUrl: URL?
     weak var player: IJKMediaPlayback?
     
-//    func initWithURL(url: URL) -> VideoPlayerViewController! {
-//        
-//    }
+    init(url: URL) {
+        super.init(nibName: nil, bundle: nil)
+        self.videoUrl = url
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +58,16 @@ class VideoPlayerViewController: UIViewController {
     }
     
     class func presentFromViewController(viewController: UIViewController, url: URL, animated: Bool) {
-//        viewController.present(<#T##viewControllerToPresent: UIViewController##UIViewController#>, animated: <#T##Bool#>, completion: <#T##(() -> Void)?##(() -> Void)?##() -> Void#>)
+        viewController.present(VideoPlayerViewController.init(url: url), animated: animated, completion: nil)
+    }
+    
+    func addMovieNotificationObservers() {
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(moviePlayerLoadStateDidChange), name: NSNotification.Name.IJKMPMoviePlayerLoadStateDidChange, object: self.player)
+    }
+    
+    func moviePlayerLoadStateDidChange() {
+//        let loadState = self.player?.loadState
+//        print(Int(loadState))
     }
 }
