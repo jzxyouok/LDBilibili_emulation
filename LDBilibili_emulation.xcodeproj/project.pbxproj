@@ -43,7 +43,6 @@
 		AD5BE0291EEEE5DD00F01FC1 /* YPAdjustSpeedView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE0251EEEE5DD00F01FC1 /* YPAdjustSpeedView.m */; };
 		AD5BE02A1EEEE5DD00F01FC1 /* YPAdjustSpeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD5BE0261EEEE5DD00F01FC1 /* YPAdjustSpeedView.xib */; };
 		AD5BE02B1EEEE5DD00F01FC1 /* YPBrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE0281EEEE5DD00F01FC1 /* YPBrightnessView.m */; };
-		AD5BE02E1EF0397500F01FC1 /* YPLiveDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD5BE02D1EF0397500F01FC1 /* YPLiveDetailViewController.m */; };
 		C9040B241EEFCEB500920438 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9040B231EEFCEB500920438 /* IJKMediaFramework.framework */; };
 		C9040B271EF11A7700920438 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C9040B261EF11A7700920438 /* libz.tbd */; };
 		C9040B291EF11A8300920438 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C9040B281EF11A8300920438 /* libbz2.tbd */; };
@@ -57,6 +56,7 @@
 		C9040B391EF11AE100920438 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9040B381EF11AE100920438 /* OpenGLES.framework */; };
 		C9040B3B1EF11AE900920438 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9040B3A1EF11AE900920438 /* QuartzCore.framework */; };
 		C9040B3D1EF11AF500920438 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9040B3C1EF11AF500920438 /* VideoToolbox.framework */; };
+		C96F23FA1EF287A7002DD0B3 /* VideoMediaControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96F23F91EF287A7002DD0B3 /* VideoMediaControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -138,8 +138,6 @@
 		AD5BE0261EEEE5DD00F01FC1 /* YPAdjustSpeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YPAdjustSpeedView.xib; sourceTree = "<group>"; };
 		AD5BE0271EEEE5DD00F01FC1 /* YPBrightnessView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPBrightnessView.h; sourceTree = "<group>"; };
 		AD5BE0281EEEE5DD00F01FC1 /* YPBrightnessView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPBrightnessView.m; sourceTree = "<group>"; };
-		AD5BE02C1EF0397500F01FC1 /* YPLiveDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPLiveDetailViewController.h; sourceTree = "<group>"; };
-		AD5BE02D1EF0397500F01FC1 /* YPLiveDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPLiveDetailViewController.m; sourceTree = "<group>"; };
 		C9040B231EEFCEB500920438 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		C9040B251EEFD39900920438 /* LDBilibili_emulation-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LDBilibili_emulation-Bridging-Header.h"; sourceTree = "<group>"; };
 		C9040B261EF11A7700920438 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -154,6 +152,7 @@
 		C9040B381EF11AE100920438 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		C9040B3A1EF11AE900920438 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C9040B3C1EF11AF500920438 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		C96F23F91EF287A7002DD0B3 /* VideoMediaControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoMediaControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -397,6 +396,7 @@
 				AD5BE0221EEEE5C000F01FC1 /* YPMediaControl.xib */,
 				AD5BE0191EE84DF600F01FC1 /* YPMediaControl.h */,
 				AD5BE01A1EE84DF600F01FC1 /* YPMediaControl.m */,
+				C96F23F91EF287A7002DD0B3 /* VideoMediaControl.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -483,8 +483,6 @@
 		AD5BDFF51EC9F36900F01FC1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				AD5BE02C1EF0397500F01FC1 /* YPLiveDetailViewController.h */,
-				AD5BE02D1EF0397500F01FC1 /* YPLiveDetailViewController.m */,
 				AD5BDFFA1EC9F3B800F01FC1 /* LiveViewController.swift */,
 			);
 			path = Controller;
@@ -749,6 +747,7 @@
 				AD5BDFEF1EC9E85C00F01FC1 /* UIView+Extensions.swift in Sources */,
 				AD5BDFE81EC9E2F400F01FC1 /* RecommendModel.swift in Sources */,
 				AD5BE0131ED72A4A00F01FC1 /* ZPStyle.swift in Sources */,
+				C96F23FA1EF287A7002DD0B3 /* VideoMediaControl.swift in Sources */,
 				AD5BE0111ED72A4A00F01FC1 /* ZPPageBarView.swift in Sources */,
 				AD5BDFFB1EC9F3B800F01FC1 /* LiveViewController.swift in Sources */,
 				AD5BE0211EEC431D00F01FC1 /* LivePlayerViewController.m in Sources */,
@@ -759,7 +758,6 @@
 				AD5BDFD81EC3537200F01FC1 /* VideoDetailViewController.swift in Sources */,
 				AD4DE0001EB8CAE10008C6F9 /* LDTabBarController.swift in Sources */,
 				AD5BE00F1ED72A4A00F01FC1 /* ZPContentView.swift in Sources */,
-				AD5BE02E1EF0397500F01FC1 /* YPLiveDetailViewController.m in Sources */,
 				AD5BE0171EE6E0D100F01FC1 /* VideoPlayerViewController.swift in Sources */,
 				AD5BE01B1EE84DF600F01FC1 /* YPMediaControl.m in Sources */,
 				AD5BDFE41EC9E2E900F01FC1 /* RecommendContentCell.swift in Sources */,

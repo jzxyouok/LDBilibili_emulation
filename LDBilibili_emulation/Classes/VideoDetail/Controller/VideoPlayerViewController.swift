@@ -12,7 +12,7 @@ import SnapKit
 class VideoPlayerViewController: UIViewController {
 
     var videoUrl: URL?
-    weak var player: IJKMediaPlayback?
+    var player: IJKMediaPlayback?
     
     init(url: URL) {
         super.init(nibName: nil, bundle: nil)
@@ -26,28 +26,27 @@ class VideoPlayerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // 设置Log信息打印
+        IJKFFMoviePlayerController.setLogReport(true)
+        // 设置Log等级
+        IJKFFMoviePlayerController.setLogLevel(k_IJK_LOG_DEBUG)
         // 检查当前FFmpeg版本是否匹配
         IJKFFMoviePlayerController.checkIfFFmpegVersionMatch(true)
         // IJKFFOptions是对视频的配置信息
         let options = IJKFFOptions.byDefault()
         
         player = IJKFFMoviePlayerController.init(contentURL: videoUrl, with: options)
-        view.addSubview((player?.view)!)
-        player?.view.snp.makeConstraints({ (make) in
-            make.top.equalTo(0)
-            make.bottom.equalTo(0)
-            make.left.equalTo(0)
-            make.right.equalTo(0)
-        })
-        player?.scalingMode = IJKMPMovieScalingMode.aspectFit
-        player?.shouldAutoplay = true
+        self.view.addSubview(player!.view)
+        player!.scalingMode = IJKMPMovieScalingMode.aspectFit
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         UIApplication.shared.isStatusBarHidden = false
-        player?.prepareToPlay()
+        if !self.player!.isPlaying() {
+            self.player!.prepareToPlay()
+        }
     }
     
     override func viewDidDisappear(_ animated: Bool) {
@@ -63,11 +62,11 @@ class VideoPlayerViewController: UIViewController {
     
     func addMovieNotificationObservers() {
         let notificationCenter = NotificationCenter.default
-        notificationCenter.addObserver(self, selector: #selector(moviePlayerLoadStateDidChange), name: NSNotification.Name.IJKMPMoviePlayerLoadStateDidChange, object: self.player)
+        notificationCenter.addObserver(self, selector: #selector(loadStateDidChange(notification:)), name: NSNotification.Name.IJKMPMoviePlayerLoadStateDidChange, object: self.player)
     }
     
-    func moviePlayerLoadStateDidChange() {
-//        let loadState = self.player?.loadState
-//        print(Int(loadState))
+    func loadStateDidChange(notification: NSNotification) {
+        let loadState = self.player?.loadState
+        print(loadState!)
     }
 }
