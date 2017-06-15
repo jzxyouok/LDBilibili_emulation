@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B385D12EB6F1F37BE7E708E /* Pods_LDBilibili_emulation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CFC049F90256F0C6AAB458 /* Pods_LDBilibili_emulation.framework */; };
+		AD2BA2091EF2DA97007F78DE /* YPPlayerFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2BA2081EF2DA97007F78DE /* YPPlayerFPSLabel.m */; };
 		AD4166FE1E7DB66F0033D506 /* LDBilibili_emulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */; };
 		AD4167091E7DB66F0033D506 /* LDBilibili_emulationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4167081E7DB66F0033D506 /* LDBilibili_emulationUITests.swift */; };
 		AD4DDFEC1EB8C7110008C6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4DDFE91EB8C7110008C6F9 /* Assets.xcassets */; };
@@ -93,6 +94,8 @@
 		62BE18B248AE88ECE8DD7B9E /* Pods-LDBilibili_emulation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDBilibili_emulation.release.xcconfig"; path = "Pods/Target Support Files/Pods-LDBilibili_emulation/Pods-LDBilibili_emulation.release.xcconfig"; sourceTree = "<group>"; };
 		7A4B74F31B1DEDFB6862D6F8 /* Pods-LDBilibili_emulation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LDBilibili_emulation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LDBilibili_emulation/Pods-LDBilibili_emulation.debug.xcconfig"; sourceTree = "<group>"; };
 		88CFC049F90256F0C6AAB458 /* Pods_LDBilibili_emulation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LDBilibili_emulation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD2BA2071EF2DA97007F78DE /* YPPlayerFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPPlayerFPSLabel.h; sourceTree = "<group>"; };
+		AD2BA2081EF2DA97007F78DE /* YPPlayerFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPPlayerFPSLabel.m; sourceTree = "<group>"; };
 		AD4166E51E7DB66F0033D506 /* LDBilibili_emulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDBilibili_emulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166F91E7DB66F0033D506 /* LDBilibili_emulationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDBilibili_emulationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDBilibili_emulationTests.swift; sourceTree = "<group>"; };
@@ -498,6 +501,8 @@
 		AD5BDFF71EC9F36900F01FC1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AD2BA2071EF2DA97007F78DE /* YPPlayerFPSLabel.h */,
+				AD2BA2081EF2DA97007F78DE /* YPPlayerFPSLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -750,6 +755,7 @@
 				C96F23FA1EF287A7002DD0B3 /* VideoMediaControl.swift in Sources */,
 				AD5BE0111ED72A4A00F01FC1 /* ZPPageBarView.swift in Sources */,
 				AD5BDFFB1EC9F3B800F01FC1 /* LiveViewController.swift in Sources */,
+				AD2BA2091EF2DA97007F78DE /* YPPlayerFPSLabel.m in Sources */,
 				AD5BE0211EEC431D00F01FC1 /* LivePlayerViewController.m in Sources */,
 				AD5BE0291EEEE5DD00F01FC1 /* YPAdjustSpeedView.m in Sources */,
 				AD5BE0121ED72A4A00F01FC1 /* ZPSegmentBarView.swift in Sources */,
