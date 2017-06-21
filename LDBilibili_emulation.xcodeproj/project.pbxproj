@@ -14,6 +14,7 @@
 		AD35B54E1EF9732C00BF3771 /* YPBufferingProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35B54C1EF9732C00BF3771 /* YPBufferingProgressView.m */; };
 		AD35B54F1EF9732C00BF3771 /* YPBufferingProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD35B54D1EF9732C00BF3771 /* YPBufferingProgressView.xib */; };
 		AD35B5521EF973E900BF3771 /* YPWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35B5511EF973E900BF3771 /* YPWaterflowLayout.m */; };
+		AD35B55B1EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35B55A1EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.m */; };
 		AD4166FE1E7DB66F0033D506 /* LDBilibili_emulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */; };
 		AD4167091E7DB66F0033D506 /* LDBilibili_emulationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4167081E7DB66F0033D506 /* LDBilibili_emulationUITests.swift */; };
 		AD4DDFEC1EB8C7110008C6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4DDFE91EB8C7110008C6F9 /* Assets.xcassets */; };
@@ -109,6 +110,8 @@
 		AD35B54D1EF9732C00BF3771 /* YPBufferingProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YPBufferingProgressView.xib; sourceTree = "<group>"; };
 		AD35B5501EF973E900BF3771 /* YPWaterflowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPWaterflowLayout.h; sourceTree = "<group>"; };
 		AD35B5511EF973E900BF3771 /* YPWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPWaterflowLayout.m; sourceTree = "<group>"; };
+		AD35B5591EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPBilibiliNormalRefresh.h; sourceTree = "<group>"; };
+		AD35B55A1EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPBilibiliNormalRefresh.m; sourceTree = "<group>"; };
 		AD4166E51E7DB66F0033D506 /* LDBilibili_emulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDBilibili_emulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166F91E7DB66F0033D506 /* LDBilibili_emulationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDBilibili_emulationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDBilibili_emulationTests.swift; sourceTree = "<group>"; };
@@ -356,6 +359,8 @@
 		AD4DE0031EB8CBEF0008C6F9 /* LDKit */ = {
 			isa = PBXGroup;
 			children = (
+				AD35B5591EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.h */,
+				AD35B55A1EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.m */,
 				AD4DE0611EBB75800008C6F9 /* Category */,
 			);
 			path = LDKit;
@@ -775,6 +780,7 @@
 				AD5BDFEF1EC9E85C00F01FC1 /* UIView+Extensions.swift in Sources */,
 				AD5BDFE81EC9E2F400F01FC1 /* RecommendModel.swift in Sources */,
 				AD5BE0131ED72A4A00F01FC1 /* ZPStyle.swift in Sources */,
+				AD35B55B1EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.m in Sources */,
 				AD35B54E1EF9732C00BF3771 /* YPBufferingProgressView.m in Sources */,
 				C96F23FA1EF287A7002DD0B3 /* VideoMediaControl.swift in Sources */,
 				AD5BE0111ED72A4A00F01FC1 /* ZPPageBarView.swift in Sources */,
