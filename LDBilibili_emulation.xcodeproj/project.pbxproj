@@ -15,6 +15,10 @@
 		AD35B54F1EF9732C00BF3771 /* YPBufferingProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD35B54D1EF9732C00BF3771 /* YPBufferingProgressView.xib */; };
 		AD35B5521EF973E900BF3771 /* YPWaterflowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35B5511EF973E900BF3771 /* YPWaterflowLayout.m */; };
 		AD35B55B1EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35B55A1EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.m */; };
+		AD35B55F1EFC16E300BF3771 /* YPToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35B55D1EFC16E300BF3771 /* YPToastView.m */; };
+		AD35B5601EFC16E300BF3771 /* YPToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD35B55E1EFC16E300BF3771 /* YPToastView.xib */; };
+		AD35B5641EFC171F00BF3771 /* YPRefreshButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35B5621EFC171F00BF3771 /* YPRefreshButton.m */; };
+		AD35B5651EFC171F00BF3771 /* YPRefreshButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD35B5631EFC171F00BF3771 /* YPRefreshButton.xib */; };
 		AD4166FE1E7DB66F0033D506 /* LDBilibili_emulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */; };
 		AD4167091E7DB66F0033D506 /* LDBilibili_emulationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4167081E7DB66F0033D506 /* LDBilibili_emulationUITests.swift */; };
 		AD4DDFEC1EB8C7110008C6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4DDFE91EB8C7110008C6F9 /* Assets.xcassets */; };
@@ -112,6 +116,12 @@
 		AD35B5511EF973E900BF3771 /* YPWaterflowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPWaterflowLayout.m; sourceTree = "<group>"; };
 		AD35B5591EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPBilibiliNormalRefresh.h; sourceTree = "<group>"; };
 		AD35B55A1EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPBilibiliNormalRefresh.m; sourceTree = "<group>"; };
+		AD35B55C1EFC16E300BF3771 /* YPToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPToastView.h; sourceTree = "<group>"; };
+		AD35B55D1EFC16E300BF3771 /* YPToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPToastView.m; sourceTree = "<group>"; };
+		AD35B55E1EFC16E300BF3771 /* YPToastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YPToastView.xib; sourceTree = "<group>"; };
+		AD35B5611EFC171F00BF3771 /* YPRefreshButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPRefreshButton.h; sourceTree = "<group>"; };
+		AD35B5621EFC171F00BF3771 /* YPRefreshButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPRefreshButton.m; sourceTree = "<group>"; };
+		AD35B5631EFC171F00BF3771 /* YPRefreshButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YPRefreshButton.xib; sourceTree = "<group>"; };
 		AD4166E51E7DB66F0033D506 /* LDBilibili_emulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDBilibili_emulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166F91E7DB66F0033D506 /* LDBilibili_emulationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDBilibili_emulationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDBilibili_emulationTests.swift; sourceTree = "<group>"; };
@@ -359,6 +369,12 @@
 		AD4DE0031EB8CBEF0008C6F9 /* LDKit */ = {
 			isa = PBXGroup;
 			children = (
+				AD35B5611EFC171F00BF3771 /* YPRefreshButton.h */,
+				AD35B5621EFC171F00BF3771 /* YPRefreshButton.m */,
+				AD35B5631EFC171F00BF3771 /* YPRefreshButton.xib */,
+				AD35B55C1EFC16E300BF3771 /* YPToastView.h */,
+				AD35B55D1EFC16E300BF3771 /* YPToastView.m */,
+				AD35B55E1EFC16E300BF3771 /* YPToastView.xib */,
 				AD35B5591EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.h */,
 				AD35B55A1EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.m */,
 				AD4DE0611EBB75800008C6F9 /* Category */,
@@ -696,10 +712,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD35B5651EFC171F00BF3771 /* YPRefreshButton.xib in Resources */,
 				AD4DDFED1EB8C7110008C6F9 /* LaunchScreen.storyboard in Resources */,
 				AD35B54F1EF9732C00BF3771 /* YPBufferingProgressView.xib in Resources */,
 				AD5BE0231EEEE5C000F01FC1 /* YPMediaControl.xib in Resources */,
 				AD5BE02A1EEEE5DD00F01FC1 /* YPAdjustSpeedView.xib in Resources */,
+				AD35B5601EFC16E300BF3771 /* YPToastView.xib in Resources */,
 				AD328FA51EF81F9900DCBEDF /* YPLivePortraitToolView.xib in Resources */,
 				AD4DDFEC1EB8C7110008C6F9 /* Assets.xcassets in Resources */,
 			);
@@ -787,10 +805,12 @@
 				AD5BDFFB1EC9F3B800F01FC1 /* LiveViewController.swift in Sources */,
 				AD2BA2091EF2DA97007F78DE /* YPPlayerFPSLabel.m in Sources */,
 				AD35B5521EF973E900BF3771 /* YPWaterflowLayout.m in Sources */,
+				AD35B5641EFC171F00BF3771 /* YPRefreshButton.m in Sources */,
 				AD5BE0211EEC431D00F01FC1 /* LivePlayerViewController.m in Sources */,
 				AD5BE0291EEEE5DD00F01FC1 /* YPAdjustSpeedView.m in Sources */,
 				AD5BE0121ED72A4A00F01FC1 /* ZPSegmentBarView.swift in Sources */,
 				AD5BE02B1EEEE5DD00F01FC1 /* YPBrightnessView.m in Sources */,
+				AD35B55F1EFC16E300BF3771 /* YPToastView.m in Sources */,
 				AD4DDFFE1EB8CA8A0008C6F9 /* HomepageViewController.swift in Sources */,
 				AD5BDFD81EC3537200F01FC1 /* VideoDetailViewController.swift in Sources */,
 				AD4DE0001EB8CAE10008C6F9 /* LDTabBarController.swift in Sources */,
