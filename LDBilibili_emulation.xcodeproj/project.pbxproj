@@ -19,6 +19,8 @@
 		AD35B5601EFC16E300BF3771 /* YPToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD35B55E1EFC16E300BF3771 /* YPToastView.xib */; };
 		AD35B5641EFC171F00BF3771 /* YPRefreshButton.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35B5621EFC171F00BF3771 /* YPRefreshButton.m */; };
 		AD35B5651EFC171F00BF3771 /* YPRefreshButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD35B5631EFC171F00BF3771 /* YPRefreshButton.xib */; };
+		AD35B5691F02A71700BF3771 /* YPSocialShareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35B5671F02A71700BF3771 /* YPSocialShareCollectionViewCell.m */; };
+		AD35B56A1F02A71700BF3771 /* YPSocialShareCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD35B5681F02A71700BF3771 /* YPSocialShareCollectionViewCell.xib */; };
 		AD4166FE1E7DB66F0033D506 /* LDBilibili_emulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */; };
 		AD4167091E7DB66F0033D506 /* LDBilibili_emulationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4167081E7DB66F0033D506 /* LDBilibili_emulationUITests.swift */; };
 		AD4DDFEC1EB8C7110008C6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4DDFE91EB8C7110008C6F9 /* Assets.xcassets */; };
@@ -122,6 +124,9 @@
 		AD35B5611EFC171F00BF3771 /* YPRefreshButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPRefreshButton.h; sourceTree = "<group>"; };
 		AD35B5621EFC171F00BF3771 /* YPRefreshButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPRefreshButton.m; sourceTree = "<group>"; };
 		AD35B5631EFC171F00BF3771 /* YPRefreshButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YPRefreshButton.xib; sourceTree = "<group>"; };
+		AD35B5661F02A71700BF3771 /* YPSocialShareCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPSocialShareCollectionViewCell.h; sourceTree = "<group>"; };
+		AD35B5671F02A71700BF3771 /* YPSocialShareCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPSocialShareCollectionViewCell.m; sourceTree = "<group>"; };
+		AD35B5681F02A71700BF3771 /* YPSocialShareCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YPSocialShareCollectionViewCell.xib; sourceTree = "<group>"; };
 		AD4166E51E7DB66F0033D506 /* LDBilibili_emulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDBilibili_emulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166F91E7DB66F0033D506 /* LDBilibili_emulationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDBilibili_emulationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDBilibili_emulationTests.swift; sourceTree = "<group>"; };
@@ -369,6 +374,9 @@
 		AD4DE0031EB8CBEF0008C6F9 /* LDKit */ = {
 			isa = PBXGroup;
 			children = (
+				AD35B5661F02A71700BF3771 /* YPSocialShareCollectionViewCell.h */,
+				AD35B5671F02A71700BF3771 /* YPSocialShareCollectionViewCell.m */,
+				AD35B5681F02A71700BF3771 /* YPSocialShareCollectionViewCell.xib */,
 				AD35B5611EFC171F00BF3771 /* YPRefreshButton.h */,
 				AD35B5621EFC171F00BF3771 /* YPRefreshButton.m */,
 				AD35B5631EFC171F00BF3771 /* YPRefreshButton.xib */,
@@ -716,6 +724,7 @@
 				AD4DDFED1EB8C7110008C6F9 /* LaunchScreen.storyboard in Resources */,
 				AD35B54F1EF9732C00BF3771 /* YPBufferingProgressView.xib in Resources */,
 				AD5BE0231EEEE5C000F01FC1 /* YPMediaControl.xib in Resources */,
+				AD35B56A1F02A71700BF3771 /* YPSocialShareCollectionViewCell.xib in Resources */,
 				AD5BE02A1EEEE5DD00F01FC1 /* YPAdjustSpeedView.xib in Resources */,
 				AD35B5601EFC16E300BF3771 /* YPToastView.xib in Resources */,
 				AD328FA51EF81F9900DCBEDF /* YPLivePortraitToolView.xib in Resources */,
@@ -798,6 +807,7 @@
 				AD5BDFEF1EC9E85C00F01FC1 /* UIView+Extensions.swift in Sources */,
 				AD5BDFE81EC9E2F400F01FC1 /* RecommendModel.swift in Sources */,
 				AD5BE0131ED72A4A00F01FC1 /* ZPStyle.swift in Sources */,
+				AD35B5691F02A71700BF3771 /* YPSocialShareCollectionViewCell.m in Sources */,
 				AD35B55B1EFAC6AB00BF3771 /* YPBilibiliNormalRefresh.m in Sources */,
 				AD35B54E1EF9732C00BF3771 /* YPBufferingProgressView.m in Sources */,
 				C96F23FA1EF287A7002DD0B3 /* VideoMediaControl.swift in Sources */,
