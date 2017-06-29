@@ -21,6 +21,8 @@
 		AD35B5651EFC171F00BF3771 /* YPRefreshButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD35B5631EFC171F00BF3771 /* YPRefreshButton.xib */; };
 		AD35B5691F02A71700BF3771 /* YPSocialShareCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35B5671F02A71700BF3771 /* YPSocialShareCollectionViewCell.m */; };
 		AD35B5721F03F59600BF3771 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35B5711F03F59600BF3771 /* YYFPSLabel.m */; };
+		AD35B5771F0553CE00BF3771 /* UIAlertController+YPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35B5741F0553CE00BF3771 /* UIAlertController+YPAlertView.m */; };
+		AD35B5781F0553CE00BF3771 /* YPAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD35B5761F0553CE00BF3771 /* YPAlertView.m */; };
 		AD4166FE1E7DB66F0033D506 /* LDBilibili_emulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */; };
 		AD4167091E7DB66F0033D506 /* LDBilibili_emulationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4167081E7DB66F0033D506 /* LDBilibili_emulationUITests.swift */; };
 		AD4DDFEC1EB8C7110008C6F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4DDFE91EB8C7110008C6F9 /* Assets.xcassets */; };
@@ -128,6 +130,10 @@
 		AD35B5671F02A71700BF3771 /* YPSocialShareCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPSocialShareCollectionViewCell.m; sourceTree = "<group>"; };
 		AD35B5701F03F59600BF3771 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
 		AD35B5711F03F59600BF3771 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		AD35B5731F0553CE00BF3771 /* UIAlertController+YPAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+YPAlertView.h"; sourceTree = "<group>"; };
+		AD35B5741F0553CE00BF3771 /* UIAlertController+YPAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+YPAlertView.m"; sourceTree = "<group>"; };
+		AD35B5751F0553CE00BF3771 /* YPAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YPAlertView.h; sourceTree = "<group>"; };
+		AD35B5761F0553CE00BF3771 /* YPAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YPAlertView.m; sourceTree = "<group>"; };
 		AD4166E51E7DB66F0033D506 /* LDBilibili_emulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LDBilibili_emulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166F91E7DB66F0033D506 /* LDBilibili_emulationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LDBilibili_emulationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4166FD1E7DB66F0033D506 /* LDBilibili_emulationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDBilibili_emulationTests.swift; sourceTree = "<group>"; };
@@ -384,6 +390,10 @@
 		AD4DE0031EB8CBEF0008C6F9 /* LDKit */ = {
 			isa = PBXGroup;
 			children = (
+				AD35B5731F0553CE00BF3771 /* UIAlertController+YPAlertView.h */,
+				AD35B5741F0553CE00BF3771 /* UIAlertController+YPAlertView.m */,
+				AD35B5751F0553CE00BF3771 /* YPAlertView.h */,
+				AD35B5761F0553CE00BF3771 /* YPAlertView.m */,
 				AD35B5661F02A71700BF3771 /* YPSocialShareCollectionViewCell.h */,
 				AD35B5671F02A71700BF3771 /* YPSocialShareCollectionViewCell.m */,
 				AD35B5611EFC171F00BF3771 /* YPRefreshButton.h */,
@@ -822,6 +832,8 @@
 				C96F23FA1EF287A7002DD0B3 /* VideoMediaControl.swift in Sources */,
 				AD5BE0111ED72A4A00F01FC1 /* ZPPageBarView.swift in Sources */,
 				AD5BDFFB1EC9F3B800F01FC1 /* LiveViewController.swift in Sources */,
+				AD35B5771F0553CE00BF3771 /* UIAlertController+YPAlertView.m in Sources */,
+				AD35B5781F0553CE00BF3771 /* YPAlertView.m in Sources */,
 				AD2BA2091EF2DA97007F78DE /* YPPlayerFPSLabel.m in Sources */,
 				AD35B5521EF973E900BF3771 /* YPWaterflowLayout.m in Sources */,
 				AD35B5641EFC171F00BF3771 /* YPRefreshButton.m in Sources */,
